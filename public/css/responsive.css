@@ -1,0 +1,341 @@
+@media only screen and (min-width: 992px){
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .swiper_content {
+        position: absolute;
+        top: 90px;
+        left: 100px
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .swiper_content {
+       left: 85px;
+       top: 61px;
+    }
+    
+}
+@media only screen and (max-width: 991px){
+    .mo-left .header-nav .logo-header{
+        top:2px;
+        padding: 8px 15px;
+        
+    }
+    .header-nav .nav{
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .footer-top {
+        padding-top: 10px;
+    }
+    .footer-logo {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        
+    }
+    .logo-header, .is-fixed.header-curve .logo-header, .is-fixed .logo-header, .is-fixed.header-curve .logo-header {
+       
+        /* top: 38px; */
+    }
+    .logo-header img, .logo-footer img {
+        max-width: 160px;
+    }
+    .extra-nav .site-button-link{
+        top:43px;
+    }
+    .top-extra-nav ul>li h4 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .top-extra-nav ul>li {
+        
+        margin: 0 10px 0px 0;
+        padding-left: 20px;
+    }
+    .is-fixed .header-nav .logo-header a img, .is-fixed.header-curve .header-nav .logo-header a img{
+        top:2px;
+        padding: 8px 15px;
+        width: 187px !important ;
+        max-width: 187px !important;
+        height: 65px !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    .kam-bnr-inr, .kam-bnr-inr .kam-bnr-inr-entry {
+        height: 130px;
+    }
+    .about-page .vim-anim-box{
+        margin-top: 70px;
+        padding: 82px 28px 26px 42px;
+    }
+    .head-block-center .w-title1, .head-block1 .w-title1 {
+        font-size: 19px;
+        font-weight: 100;
+        color: #596162;
+        margin-bottom: 25px;
+    }
+    .mission-left{
+        margin-bottom: 5px;
+    }
+    .testi-area .testimonial-12 .testimonial-detail{
+        padding: 50px 30px 50px 62px; 
+    }
+    .footer-area .widget_services {
+        padding-left: 0;
+    }
+    .equip-block .kam-info-has-text {
+        
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .top-extra-nav .header-nav .nav{
+        margin-top: 2px;
+        display: none;
+      }
+}
+@media only screen and (max-width: 575px) {
+    .swiper_content {
+        left: -25px;
+        top: -5px;
+    }
+    /* .some-facts{
+        border: 10px solid #b3e9ff;
+        border-right: 0px;
+        height: 90px;
+    } */
+    .some-facts:after, .some-facts:before {
+        right: -6px;
+        width: 9px;
+        height: 19px;
+    }
+    .some-facts:after {
+        bottom: -10px;
+    }
+    .some-facts:before {
+        top: -10px;
+    }
+    .sf-content {
+        position: relative;
+        top: 40px;
+        left: 33px;
+        text-align: left;
+    }
+    .about-breadcumb .sf-content,.infra-breadcumb .sf-content{
+        top: 19px;
+        left: 10px;
+    }
+    .about-breadcumb .sf-content h3,
+    .about-breadcumb .sf-content p,.infra-breadcumb .sf-content h3,.infra-breadcumb .sf-content p{
+        margin-left: 18px; 
+    }
+    .about-breadcumb .some-facts,.infra-breadcumb .some-facts{
+        top: 20px;
+    }
+    .about-page .vim-anim-box{
+        margin-top: 70px;
+        padding: 82px 28px 26px 42px;
+    }
+    .sf-content p{
+        font-size: 1.5rem !important;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    .sf-content .arrow-animation {
+        position: absolute;
+        top: -25px;
+    }
+    .sf-content h3 {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+
+
+    .slider-right .swiper-slide-active .swiper_content h3{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .vm-img-box {
+        
+        top: -85px;
+    left: 32%;
+    right: 0;
+    }
+    .vm-img-box img {
+        
+        height: 160px !important;
+        width: 160px!important;
+    }
+    .about-page .head-block-center:before {
+        
+        bottom: -117px;
+        
+    }
+    .mission-left{
+        margin-bottom: 5px;
+    }
+    .testi-area .testimonial-12 .testimonial-detail{
+        padding: 50px 30px 50px 62px; 
+    }
+    .footer-area .widget_services {
+        padding-left: 0;
+    }
+    .equip-block .kam-info-has-text {
+        
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .top-extra-nav .header-nav .nav{
+        margin-top: 2px;
+        display: none;
+      }
+  }
+
+  @media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    /* justify-content: end; */
+}
+
+  }
+/**end-responsive*/
+
+
+@media (max-width: 476px) {
+    .tab-class .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+        width: 10px;
+    }
+    .get-class .ant-btn-primary {
+        background-color: #1f445b;
+        width: 339px;
+    }
+    .newd {
+        padding-top: 20px;
+    }
+    .loc_class {
+        padding-left:10px !important;
+        padding-right: 10px !important;
+    }
+    .butclass .ant-btn {
+        background-color: #1f445b;
+    color: #fff;
+    width: 141px;
+    height: 49px;
+    margin: 6px 0px;
+    }
+    .network_img_bg {
+        background-image: url(/images/about-us/network-min.43473758.png);
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+        display: block;
+        height: 907px;
+        right: 1px;
+    }
+    .slider_video_box img {
+        height: 907px;
+    }
+    .nw-tab .ant-tabs-left > .ant-tabs-nav, .nw-tab .ant-tabs-right > .ant-tabs-nav {
+        width: 54%;
+        background-color: #ededed38;
+        padding: 17px;
+        top: 50px;
+    }
+    .nw-tab .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+        top: 30px;
+        /* width: 359px; */
+    }
+    .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+        /* width: 400px; */
+        background-color: white;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .nav-but {
+        padding-top: 26px;
+    }
+    .kam-social-icon li {
+        padding: 9px;
+    }
+    .header-nav .nav {
+        margin-top: 70px;
+        padding-left: 0px;
+    }
+    .logo-header, .is-fixed.header-curve .logo-header, .is-fixed .logo-header, .is-fixed.header-curve .logo-header {
+        /* top: 10px; */
+  }
+  .logo_middle  {
+    margin-bottom: 0px;
+  }
+  .top-extra-nav ul>li i {
+    left: 0px;
+    position: absolute;
+    top: 4px;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    padding-top: 3px;
+    padding-left: 2px;
+    color: #1f445b;
+    border-radius: 50%;
+    font-size: 11px;
+}
+.header-nav .nav > li .mega-menu > li > a {
+    display: block;
+}
+  .top-extra-nav ul>li h6 {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .top-extra-nav .header-nav .nav{
+    margin-top: 2px;
+    display: none;
+  }
+  .nob_box .acco-container {
+    height: 1724px;
+  }
+  .nob_box .accordion-group {
+    height: 1724px;
+}
+.nob_box .accordion-group li section {
+    padding: 0px 0px;
+}
+.nob_box .accordion-group li img {
+    height: 430px;
+}
+.accordion-group li {
+ width: 400px;;
+ /* padding-top: 20px !important; */
+ margin-top: 30px !important;
+}
+.accordion-group li.out {
+    width: 382px;
+}
+.accordion-group li section article h4 {
+    line-height: 57px;
+}
+.accordion-group li section article p {
+    line-height: 22px !important;
+    font-size: 18px !important;
+}
+.nob_box .accordion-group li h3 {
+    font-size: 20px;
+    top: 274px;
+    left: 44px;
+}
+.tabs-d .ant-tabs-extra-content {
+    display: none;
+
+}
+.nd {
+    padding-top: 20px;
+}
+.nav.navbar-nav li a i.fa-chevron-down {
+    color: #000;
+}
+}

@@ -1,0 +1,15 @@
+.loc_class li {
+    list-style-type: none;
+}
+.loc_class p{
+    padding-left: 30px;
+}
+.loc_class i {
+    color: #1f445b;
+    padding-right: 13px;
+
+}
+
+.loc_class {
+    padding: 30px 0px;
+}

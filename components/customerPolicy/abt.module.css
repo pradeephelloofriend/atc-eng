@@ -1,0 +1,85 @@
+.abt_cl h5{
+    color: #004B4B;
+    font-size: 19px;
+    line-height: 31px;
+    font-weight: 600;
+}
+.abt_cl {
+    padding: 60px 0px;
+}
+.abt_cl p {
+    font-size: 18px;
+}
+.dif_class {
+    background-image: url('/images/fondo-directorio-2.jpg');
+    padding: 120px 0px;
+}
+.dif_C {
+    padding-top: 60px 0px;
+}
+.dif_class h1,
+.dif_class h3 {
+    color: #004B4B;
+}
+.lead {
+    /* background-image: url('/images/fondo-directorio-2.jpg'); */
+    padding: 60px 0px;
+}
+.newl {
+    background-image: url('/images/fondo-directorio-2.jpg');
+    padding: 60px 0px;
+}
+.new_C {
+    padding: 40px 0px;
+}
+.abtClass {
+    padding: 40px 0px;
+}
+.get_class {
+    background-image: url('/images/gettoknow/getback.jpg');
+}
+.new_class {
+    padding: 40px 0px;
+}
+.log_cen img {
+    width: 152px;
+    padding: 20px 0px;
+}
+.get_class p {
+    font-size: 20px;
+    padding: 8px;
+}
+.transparent_box {
+    background-color: rgb(151 151 151 / 50%) /* Red with 50% opacity */
+  }
+  .all_data {
+    padding: 20px;
+  }
+  .butclass {
+    padding: 20px;
+    display: flex;
+  }
+  .his_com {
+   background-image: url('/images/fondo-directorio-2.jpg');
+  }
+  .abt_his {
+    padding: 40px 0px;
+  }
+  @media (max-width: 476px) {
+    .butclass {
+        padding: 20px;
+    display: grid;
+    margin-top: -10px;
+    justify-content: center
+      }
+      .get_class p {
+        font-size: 14px;
+    }
+    .fon {
+        font-size: 19px;
+    }
+    .abt_cl h5 {
+        font-size: 17px;
+    line-height: 32px;
+    }
+  }
