@@ -1,6 +1,6 @@
 .bg-red-c{
     /* background-color: #1f445b; */
-    background-color: #5b92cd;
+    background-color: #0b7a7e;
 }
 .img-round{
     border-radius: 50%;
@@ -201,14 +201,10 @@
  SLIDER AREA
 -----------------------*/
 .slider-area {
-    /* background-image: url('https://res.cloudinary.com/depg2aab2/image/upload/v1696331298/ihm/s1_gwxkxi.jpg'); */
+    width: 100%;
     position: relative;
-    background-size: cover;
-    background-position: center center;
     overflow: hidden;
     display: block;
-    background-color: #ffffff;
-    height: 650px;
 }
 
 .swiper_content h1,
@@ -3104,7 +3100,8 @@ background-color: transparent;
     border-top: 1px solid #dadada;
 }
 .logo_middle{
-    /* margin-bottom: 80px; */
+    justify-content: space-between;
+    align-items: center;
 }
 .slider_box{
     display: flex;
@@ -3195,10 +3192,10 @@ width: 65px;
     color: #1f445b;
 }
 .read-more {
-    color: #555555;
+    color: #fff;
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     padding-right: 30px;
 }
 .read-more i {
@@ -3214,7 +3211,7 @@ width: 65px;
     padding: 2px;
 }
 .read-more:hover{
-    color: #1f445b
+    color: #b3ffd9
 }
 .read-more i::before {
     -webkit-transition: -webkit-transform 0.4s;
@@ -3226,7 +3223,7 @@ width: 65px;
     padding: 2px;
   }
   .read-more:hover i::before {
-    color: #1f445b;
+    color: #b3ffd9;
     transform: translateX(150%);
     -webkit-transform: translateX(150%);
     -moz-transform: translateX(150%);
@@ -3351,21 +3348,22 @@ width: 65px;
     align-items: center;
     height: 100%; 
   }
-  .nd {
-    padding-bottom: 50px;
-  }
+  
     .nd .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
     width: 400px;
     background-color: white;
   }
-  .tab-class .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  .nd .tab-class .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: white;
   }
-  .tab-class .ant-tabs-tab-active {
-    background-color: #07999c;
+  .nd .tab-class .ant-tabs-tab-active {
+    background-color: #3c9133;
     color: white;
   }
-  
+  .nd .ant-card .nd .ant-card-bordered{
+    border-radius: 0px !important;
+    border: none !important;
+  }
   .tab-class .ant-tabs-nav-list {
     /* border: 2px solid black;  */
   }
@@ -4165,10 +4163,7 @@ text-decoration: underline;
         width: 135px;
     height: 36px;
       }
-      .new-area {
-        height: 70vh;
-        background-image: url('/images/aeBanner-min.jpg');
-      }
+     
       .shop-account .form-control {
         border: 0 none;
         box-shadow: 2px 2px 4px 0 rgb(115 115 115 / 32%);
@@ -4356,7 +4351,7 @@ background-color: #fff;
         padding-left:0;
     }
     .top-extra-nav .header-nav .nav > li {
-        padding: 0 17px;
+        padding: 0 8px;
     }
     .top-extra-nav .header-nav .nav i {
         font-size: 8px;
@@ -4369,6 +4364,7 @@ background-color: #fff;
         font-size: 12px;
         padding: 0;
         font-weight: 500;
+        text-transform: uppercase;
     }
     .top-extra-nav .header-nav .nav > li > a:after {
         content: none;
@@ -4468,7 +4464,7 @@ background-color: #fff;
     font-weight: 600;
     font-size: 14px;
     color: #FFF;
-    background-color: #4c564d;
+    background-color: #3c9133;
     border: 1px solid #1f445b;
     box-shadow: inset 0 0 0 0 #F6F6F9;
     border-radius: 5px;
@@ -4486,7 +4482,7 @@ background-color: #fff;
     height: 200%;
     top: 110%;
     left: 50%;
-    background: rgb(0, 132, 255);
+    background: #3977bf;
     transform: translateX(-50%);
     border-radius: 50%;
     z-index: -1;
@@ -4500,7 +4496,7 @@ background-color: #fff;
   }
   .btn_primary2:not(:disabled):not(.ant-btn-disabled):hover {
     color: #ffffff ;
-    background-color: #4c564d ;
+    background-color: #3c9133 ;
     border-color: #1f445b;
   }
   /*button drawer*/
@@ -4853,4 +4849,68 @@ height: 300px;
 }
 .ml-0{
     margin-left: 0px;
+}
+.tan-class .ant-tabs >.ant-tabs-nav .ant-tabs-nav-operations, .ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-operations{
+    display: none !important;
+}
+.logo_middle ul>li {
+    display: flex;
+    
+    padding-left: 15px;
+    position: relative;
+    text-align: left;
+}
+.logo_middle ul>li>a {
+    display: block;
+}
+.logo_middle  ul>li i {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 28px;
+    width: 28px;
+    padding-top: 4px;
+    color: #3c9133;
+}
+.logo_middle ul>li h6 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 0;
+}
+.sah_grp p{
+    color: white;
+    margin-bottom: 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.mySwiper{
+    max-height: 350px;
+}
+.ab_intro ,.w-title{
+    font-size: 20px !important;
+    margin-bottom: 5px !important;
+}
+.ab_intro .head-block:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 1px;
+    width: 64px;
+    height: 1px;
+    background: #308c90;
+    left: 0px;
+    z-index: 1;
+}
+.ab_intro .head-block:after {
+    content: none !important;
+    
+}
+.ucont p{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.ucont>li::marker{
+    display: none;
+    content: none;
 }

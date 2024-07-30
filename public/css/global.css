@@ -159,10 +159,8 @@ p a {
    color: #333333;
 }
 img {
-   border-style: none;
+   max-width: 100%;
    height: auto;
-   /* max-width: 50%; */
-   vertical-align: middle;
 }
 hr {
    clear: both;
@@ -3192,9 +3190,9 @@ blockquote:before {
 }
 .logo-header img,
 .logo-footer img {
-   height: 80px;
+   height: 95px;
    width: 100%;
-   max-width: 290px;
+   max-width: 236px;
    margin: 10px 0;
 }
 .logo-header span,
@@ -13704,6 +13702,10 @@ ol.commentlist li .star-rating {
 }
 .content-inner-35 {
    padding-top: 35px;
+   padding-bottom: 35px;
+}
+.content-inner-0-35 {
+   padding-top: 0px;
    padding-bottom: 35px;
 }
 .content-inner{

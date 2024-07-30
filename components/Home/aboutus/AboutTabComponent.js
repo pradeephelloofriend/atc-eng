@@ -4,6 +4,7 @@ const { TabPane } = Tabs;
 import { CheckOutlined, HomeOutlined, UserOutlined, PicCenterOutlined, HistoryOutlined } from '@ant-design/icons';
 import styles from './about.module.css'
 import { useRouter } from 'next/router';
+import ClientListComponent from '../../clients/ClientListComponent';
 
 function AboutTabComponent(
     { title1, title2, title3, title4, head1, para1 ,buttoncon, head2, list1, list2, list3, list4, list5, list6,
@@ -17,6 +18,8 @@ function AboutTabComponent(
             <Tabs className='tab-class' tabPosition="left">
                 <TabPane className='all_tab' tab={<span><HomeOutlined />{title1}</span>} key="1">
                     <Card
+                    style={{boxShadow:'none',borderRadius:'0px'}}
+                    bordered={false}
                     >
                         <div className={styles.first_tab}>  
                             <div className='row'>
@@ -42,7 +45,7 @@ function AboutTabComponent(
                     </Card>
                 </TabPane>
                 <TabPane tab={<span><UserOutlined />{title2}</span>} key="2">
-                    <Card>
+                    <Card bordered={false} style={{boxShadow:'none',borderRadius:'0px'}}>
                     <div className={styles.first_tab}>
                         <div className='row'>
                             <div className='col-md-8 vision-box'>
@@ -75,7 +78,8 @@ function AboutTabComponent(
                     </Card>
                 </TabPane>
                 <TabPane tab={<span><PicCenterOutlined />{title3}</span>} key="3">
-                <Card
+                <Card bordered={false}
+                style={{boxShadow:'none',borderRadius:'0px'}}
                     >
                         <div className={styles.first_tab}>
                             <div className='row'>
@@ -101,7 +105,8 @@ function AboutTabComponent(
                     </Card>
                 </TabPane>
                 <TabPane tab={<span><HistoryOutlined />{title4}</span>} key="4">
-                <Card
+                <Card bordered={false}
+                    style={{boxShadow:'none',borderRadius:'0px'}}
                     >
                         <div className={styles.first_tab}>
                             <div className='row'>
@@ -130,7 +135,9 @@ function AboutTabComponent(
                     </Card>
                 </TabPane>
             </Tabs>
+            
             </div>
+           
         </>
     )
 }

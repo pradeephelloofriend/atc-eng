@@ -2,11 +2,17 @@ import React from 'react'
 import AboutUsHeaderComponent from './AboutUsHeaderComponent'
 import AboutTabComponent from './AboutTabComponent';
 import styles from './about.module.css'
+import ClientListComponent from '../../clients/ClientListComponent';
 
 const AboutUsComponent = () => {
   return (
-      <div className={`container ${styles.tab_cl}`}>
-          <AboutTabComponent
+    
+    <section className={`${styles.about_box} section-full `}>
+
+    
+      <div className={`container`}>
+        <div className={`${styles.tab_cl}`}>
+        <AboutTabComponent
          title1='Who we are'
          title2='Our vision'
          title3='Our mission'
@@ -35,7 +41,10 @@ const AboutUsComponent = () => {
           head7="Missions"
           para6='Our mission is to empower our clients with superior technical expertise and unparalleled service, enabling them to enhance the efficiency, safety, and performance of their operations. We are dedicated to delivering innovative solutions tailored to meet the unique needs of each client, while upholding the highest standards of professionalism, integrity, and environmental responsibility. Through continuous improvement and investment in our people, processes, and technology, we strive to exceed expectations and create long-term value for our stakeholders.'
           />
+        </div>
+        
            </div>
+           </section>
   )
 }
 

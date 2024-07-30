@@ -25,6 +25,8 @@ function AboutUsResponsiveComponent() {
             key: '1',
             label: <span><HomeOutlined /><span className='new-s'>{'Who we are'}</span></span>,
             children: <Card
+			bordered={false}
+			style={{borderRadius:'0px'}}
 			>
 				<div className={styles.first_tab}>
 					<div className='row'>
@@ -52,7 +54,9 @@ function AboutUsResponsiveComponent() {
         {
             key: '2',
             label: <span><UserOutlined /><span className='new-s'>Vision</span></span>,
-            children:<Card>
+            children:<Card bordered={false}
+			style={{borderRadius:'0px'}}
+			>
 			<div className={styles.first_tab}>
 				<div className='row'>
 					<div className='col-md-8'>
@@ -86,6 +90,8 @@ function AboutUsResponsiveComponent() {
             key: '3',  
             label: <span><PicCenterOutlined /><span className='new-s'>Our mission</span></span>,
             children: <Card
+			bordered={false}
+			style={{borderRadius:'0px'}}
 			>
 				<div className={styles.first_tab}>
 					<div className='row'>
@@ -114,6 +120,8 @@ function AboutUsResponsiveComponent() {
             key: '4',
             label: <span><HistoryOutlined /><span className='new-s'>Our history</span></span>,
             children: <Card
+			bordered={false}
+			style={{borderRadius:'0px'}}
 			>
 				<div className={styles.first_tab}>
 					<div className='row'>

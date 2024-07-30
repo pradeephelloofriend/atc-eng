@@ -65,3 +65,56 @@
        padding-top: 20px;
     }
   }
+
+  .about_box{
+    height: 325px;
+    max-height: 400px;
+    z-index: 1;
+  }
+  .client_sec{
+    margin-top: 45px;
+  }
+
+  .ab_intro{
+    background: url(/images/about-us/atcIntroBack.jpg) no-repeat fixed center center;
+    background-size: cover;
+    
+    position: relative;
+    
+}
+.ab_intro:before {
+    content: "";
+    background: #0b7a7ed4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+.ab_intro_left{
+    position: relative;
+    padding: 25px 100px 0 0;
+}
+.ab_intro_left h1{
+    color: #fff;
+}
+.ab_intro_left p{
+    color: #fff;
+}
+
+    .ab_intro_right{
+        position: relative;
+        text-align: center;
+        display: block;
+        border-left: 1px solid #ffffff4f;
+        padding: 50px 30px;
+    background: #ffffff;
+
+}
+.ab_intro_right h4{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #0b7a7e;
+}

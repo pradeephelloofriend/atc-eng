@@ -53,14 +53,49 @@ const MainNavBarComponent =()=>{
                 
                     {/*<!-- website logo -->*/}
                     <TopExtraNavComponent isFixed={isFixed}/>
-                    <div className='container logo_middle clearfix' style={{display:isFixed!==null?'none':'block', height:"100px"}}>
+                    <div className='container logo_middle' style={{display:isFixed!==null?'none':'flex'}}>
                         <div className="logo-header mostion logo-dark">
-                            <a >
-                                <img src='/images/logo/aplogo.png' alt="logo" /> 
-    
-                                </a>
+                            <a ><img src='/images/logo/aplogo.png' alt="logo" /></a>
                                 
                         </div>
+                        <div className='klab-topbar-left'>
+                                <ul>
+                                    <li>
+                                        <a href="#" style={{ marginLeft: '6px' }}>
+                                            <div className='icon-box'>
+                                                <i class="fa fa-money" aria-hidden="true"></i>
+                                            </div>
+                                            <h6>GST - 30CBAPR9562D1ZS
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style={{ marginLeft: '6px' }}>
+                                            <div className='icon-box'>
+                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                            </div>
+                                            <h6>apurvaengineering23@gmail.com
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div className='icon-box'>
+                                                <i className="fa fa-phone" aria-hidden="true"></i>
+                                            </div>
+                                            <h6>+91 7841069245</h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div className='icon-box'>
+                                                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                                            </div>
+                                            <h6>VERNA INDUSTRIAL ESTATE VERNA- GOA</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         {/*<!-- nav toggle button -->*/}
                         <button onClick={()=> setBtnClick(!btnClick)} 
                                 className={btnClick?"navbar-toggler open navicon justify-content-end":"navbar-toggler collapsed navicon justify-content-end"} 

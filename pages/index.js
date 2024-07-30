@@ -8,12 +8,17 @@ import AboutNetworkComponent from '../components/about-us/AboutNetworkComponent'
 import AboutGetToComponent from '../components/about-us/AboutGetToComponent';
 import TabOneComponent from '../components/Home/forCompanies/TabOneComponent';
 import CompaniesComponent from '../components/Home/forCompanies/CompaniesComponent';
+import MachinesComponent from '../components/products/MachinesComponent';
+import AboutIntroComponent from '../components/Home/aboutus/AboutIntroComponent';
 const index = () => {
   return (
     <>
       <MainSliderComponent/>
-
-      {/* <CompaniesComponent /> */}
+      {/*<ClientsComponent/>*/}
+      <MachinesComponent/>
+      <AboutIntroComponent/>
+      <LocationComponent />
+      {/*<CompaniesComponent />*/}
       {/* <TrialComponent /> */}
       {/* <CompaniesResponsiveComponent /> */}
       {/* <ProductComponent/> */}
@@ -24,8 +29,8 @@ const index = () => {
       {/* <AboutNetworkComponent /> */}
 
       <ReviewComponent />
-      {/* <ClientsComponent/> */}
-      <LocationComponent />
+      
+      
       {/* <ClientTestimonialComponent/> */}
     </>
   )

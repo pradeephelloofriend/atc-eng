@@ -5,7 +5,7 @@ import ClientListComponent from './ClientListComponent';
 const ClientsComponent = () => {
   return (
     <>
-        <div className="section-full bg-white content-inner-35">
+        <div className="section-full bg-white content-inner-0-35">
               <div className="container ">
                     
                   <ClientListComponent/>  
