@@ -26,7 +26,12 @@ const MachinesComponent = () => {
                                     <li><a onClick={() => router.push('/about-us')}>CNC FABRIC AND SHEET CUTTING MACHINE:</a></li>
                                     <li><a onClick={() => router.push('/about-us')}>HIGH FREQUENCY WELDING MACHINE:</a></li>
                                 </ul>
+                                <div className='mch_btn mt-3'>
+                                    <a class="read-more" href="">Read More<i class="fa fa-arrow-right"></i></a>
+                                </div>
                             </div>
+                            
+                            
                         </div>
                     </Col>
                     
@@ -46,6 +51,9 @@ const MachinesComponent = () => {
                                     <li><a onClick={() => router.push('/about-us')}>REFRIGERATOR: DRAIN HOSES:</a></li>
                                     <li><a onClick={() => router.push('/about-us')}>VARIOUS EXTRUDED AND FABRICATED PROFILES:</a></li>
                                 </ul>
+                                <div className='mch_btn mt-3'>
+                                    <a class="read-more" href="">Read More<i class="fa fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </Col>
@@ -74,6 +82,9 @@ const MachinesComponent = () => {
                                     <li><a onClick={() => router.push('/about-us')}>THERMOFORMED EPS PALLETS:</a></li>
                                     <li><a onClick={() => router.push('/about-us')}>RADOMES FOR TELECOM SECTOR</a></li>
                                 </ul>
+                                <div className='mch_btn mt-3'>
+                                    <a class="read-more" href="">Read More<i class="fa fa-arrow-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </Col>

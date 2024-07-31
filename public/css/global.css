@@ -7231,13 +7231,13 @@ a,
    vertical-align: middle;	
 }
 .site-button {
-   background-color: #1f445b;
+   background-color: #3c9133;
 }
 .site-button:active,
 .site-button:hover,
 .site-button:focus,
 .active > .site-button {
-   background-color: #d8a409;
+   background-color: #3c9133;
    color: #fff;
 }
 .site-button-secondry {
@@ -11748,7 +11748,7 @@ footer .widget_services ul li {
 /*widget Getintuch*/
 .footer-top {
    /* background: #1f445b; */
-   background: #000000;
+   background: #1e7b82;
    background-size: unset;
    background-position: center;
    padding: 80px 0 20px;

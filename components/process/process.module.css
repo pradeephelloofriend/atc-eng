@@ -1,0 +1,83 @@
+.ab_intro{
+    background: url(/images/process/plast.jpg) no-repeat fixed center center;
+    background-size: cover;
+    
+    position: relative;
+    
+}
+.ab_intro:before {
+    content: "";
+    background: #0b7a7ed4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+.ab_intro_left{
+    position: relative;
+    padding: 25px 100px 0 0;
+}
+.ab_intro_left h1{
+    color: #fff;
+}
+.ab_intro_left p{
+    color: #fff;
+}
+
+    .ab_intro_right{
+        position: relative;
+        text-align: center;
+        display: block;
+        border-left: 1px solid #ffffff4f;
+        padding: 50px 30px;
+    background: #ffffff;
+
+}
+.ab_intro_right h4{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #0b7a7e;
+}
+.pr_box{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.pr_heading{
+    position: relative;
+}
+.pr_heading h1{
+    position: relative;
+    color: #fff;
+}
+.pr_heading h1:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: -10px;
+    width: 243px;
+    height: 1px;
+    background: #ffffff;
+    left: 0;
+    z-index: 1;
+}
+.pr_item_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    border-left: 1px solid #ffffff4f;
+    padding: 14px;
+    background: #ffffff;
+    text-align: center;
+    height: 150px;
+    border-radius: 10px;
+}
+.item_top h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}

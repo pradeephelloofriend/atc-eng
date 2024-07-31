@@ -1,5 +1,5 @@
 .head_class {
-    background: #828885;
+    background: #227d84;
     padding: 7px;
     color: #fff;
 }
@@ -20,4 +20,14 @@
 }
 .swip img {
     
+}
+.sw_cont{
+    text-align: center;
+    padding: 24px;
+}
+.sw_cont h2{
+    font-size: 24px;
+}
+.sw_cont p{
+    font-size: 16px;
 }

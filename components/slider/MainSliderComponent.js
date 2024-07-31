@@ -20,10 +20,10 @@ const MainSliderComponent = () => {
         
           <div className='slider-right'>
             <Swiper
-              autoplay={{
+              /*autoplay={{
            delay: 2500,
            disableOnInteraction: false,
-              }}
+              }}*/
               pagination={{
                 dynamicBullets: true,
               }}
@@ -34,9 +34,9 @@ const MainSliderComponent = () => {
                 <img src='/images/aeBanner-min.jpg' alt="s1"  />
                 <div className="swiper_content ">
                   <div class="some-facts "></div> 
-                   
+                   <h4>Welcome to ATC Industries</h4>
                   
-                  <p>Agnel group a goan native a diversified business.</p>
+                  <p>one-stop shop for injection molding, extrusion, blow molding, thermoforming of plastic components, and HF-welded fabric parts.</p>
                   <a href="#" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
                 </div> 
               </SwiperSlide>
@@ -44,7 +44,7 @@ const MainSliderComponent = () => {
                 <img src='/images/aeBanner-min.jpg' alt="s1"  />
                 <div className="swiper_content ">
                   <div class="some-facts "></div> 
-                   
+                  <h4>Welcome to ATC Industries</h4>
                   
                   <p>Agnel group a goan native a diversified business.</p>
                   <a href="#" className="site-button radius-xl btnhover13  mt-10">Learn More</a>

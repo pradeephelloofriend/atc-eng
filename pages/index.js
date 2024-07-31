@@ -10,6 +10,7 @@ import TabOneComponent from '../components/Home/forCompanies/TabOneComponent';
 import CompaniesComponent from '../components/Home/forCompanies/CompaniesComponent';
 import MachinesComponent from '../components/products/MachinesComponent';
 import AboutIntroComponent from '../components/Home/aboutus/AboutIntroComponent';
+import ProcessComponent from '../components/process/ProcessComponent';
 const index = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const index = () => {
       <MachinesComponent/>
       <AboutIntroComponent/>
       <LocationComponent />
+      <ProcessComponent/>
       {/*<CompaniesComponent />*/}
       {/* <TrialComponent /> */}
       {/* <CompaniesResponsiveComponent /> */}
