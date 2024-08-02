@@ -1854,8 +1854,8 @@ dl dd {
 .kam-img-effect img {
    display: block;
    margin: 0;
-   width: 537px;
-   height: 221px;
+   width: 100%;
+   height: auto;
    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -2116,14 +2116,14 @@ dl dd {
 .kam-info-has p,
 .kam-info-has-text,
 .kam-info-has a {
-   color: #000;
+   color: #fff;
 }
 .kam-info-has-text :before {
    color: #fff
 }
 .kam-info-has .kam-info-has-text {
-   margin-bottom: -1px;
-    line-height: 19px;
+   margin-bottom: 20px;
+    line-height: 24px;
 }
 .kam-media {
    overflow: hidden;
@@ -11407,16 +11407,11 @@ ul[class*="list-"]{
 }
 /*==for images==*/
 
-.kam-media{
-   background-color: #FFF;
-   height: 258px;
-   position: relative;
-   box-shadow: 0 10px 13px rgba(0, 0, 0, 0.7);
-}
+
 .kam-media img,
 .kam-post-media img {
-   width: 322px !important;
-   /* height: auto; */
+   width: 100%;
+   height: auto;
 }
 /* Box Background */
 .kam-box-bg{

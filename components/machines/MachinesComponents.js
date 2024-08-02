@@ -5,9 +5,14 @@ const {Meta} = Card
 import { Machines } from './Machines';
 import style from '../spares/sparse.module.css'
 import Popup from '../spares/Popup';
+import { Container } from 'react-bootstrap';
+import MachineBlock1 from './MachineBlock1';
+import MachineBlock2 from './MachineBlock2';
+import MachineBlock3 from './MachineBlock3';
+import MachineBlock4 from './MachineBlock4';
 
 function MachinesComponent() { 
-  // console.log("here",products)
+  console.log("here",Machines)
   
   const [selected, setSelected] = useState(null)
 
@@ -38,7 +43,18 @@ function MachinesComponent() {
 
   return (
     <>
-    <div className='spare-pro'>
+    <section className='spare-pro'>
+      <Container>
+              <div className='head-block-center text-center'>
+                              <h4 className="w-title">Equipments We Used</h4>
+                              <p className='w-title1'>Cutting-Edge Technology</p>
+                          </div>
+
+                         <MachineBlock1/>
+                         <MachineBlock2/>
+                         <MachineBlock3/>
+                         <MachineBlock4/>
+      </Container>
     <div className='container'>
         {/*<Tabs defaultActiveKey='0' tabPosition={width<900?'top':'left'}>
           <TabPane tab={'HOME APPLIANCES'} key={0}>*/}
@@ -62,7 +78,7 @@ function MachinesComponent() {
           </div>
         }
       </div>
-    </div>
+    </section>
     </>
   )
 }

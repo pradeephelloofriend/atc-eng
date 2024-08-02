@@ -2451,10 +2451,11 @@ background-color: #cf2030;
 .sf-content p {
     font-family: "NeoSansStd-Regular";
     text-transform: capitalize;
-    font-size: 3rem !important;
+    font-size: 40px !important;
     margin-bottom: 4px;
-    color: #fff;
-    text-shadow: 2px 2px #00000096;
+    color: #265994;
+    /*text-shadow: 2px 2px #d1dfea;*/
+    
 }
 .sf-content {
     position: relative;
@@ -2793,9 +2794,8 @@ background-color: #cf2030;
     text-align: center;
 }
 .equip-block .kam-info-has-text{
-    font-family: "NeoSansStd-Regular";
-    font-weight: bold;
-    font-size: 19px;
+    font-weight: 300;
+    font-size: 18px;
 }
 .pad-class {
     padding: 10px;
@@ -2816,7 +2816,7 @@ background-color: #cf2030;
     opacity: .85;
 }
 .equip-block .anticon{
-    color: black;
+    color: #fff;
     font-size: 60px;
 }
 .eq-block1-col{
@@ -4925,4 +4925,8 @@ height: 300px;
 .ucont>li::marker{
     display: none;
     content: none;
+}
+.abt_block .w-title{
+    font-size: 35px !important;
+    margin-bottom: 10px !important;
 }
