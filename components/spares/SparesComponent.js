@@ -5,6 +5,7 @@ const { TabPane } = Tabs;
 import {products} from './products'
 import style from './sparse.module.css'
 import Popup from './Popup';
+import ExtraPopup from './ExtraPopup.js';
 
 function SparesComponent() { 
   // console.log("here",products)
@@ -28,7 +29,7 @@ function SparesComponent() {
 
   const handleDeityClick = (type, index) => {
     setSelected({type:type,index:index});
-    document.body.style.overflow = 'hidden'; 
+    // document.body.style.overflow = 'hidden'; 
   };
 
   const handleClose = () => {
@@ -40,12 +41,12 @@ function SparesComponent() {
     <>
     <div className='spare-pro'>
     <div className=''>
-        <Tabs defaultActiveKey='0' tabPosition={width<900?'top':'left'}>
+        <Tabs defaultActiveKey='0' tabPosition={width<900?'top':'left'} style={{fontSize:"10px"}}>
           <TabPane tab={'HOME APPLIANCES'} key={0}>
             
-            <div className='row ml-0'>
+            <div className='row'>
               {products.home.map((v,index)=>
-                <div className='col-md-4' onClick={()=> handleDeityClick('home',index)} key={index}>
+                <div className='col-md-3' onClick={()=> handleDeityClick('home',index)} key={index}>
                   <Card hoverable cover={<img alt={v.title} src={v.thumImg} />}>
                     <Meta title={v.title}  />
                   </Card>
@@ -56,11 +57,23 @@ function SparesComponent() {
           </TabPane>
           <TabPane tab={'TELECOM SECTOR'} key={1}>
 
-            <div className='row ml-0'>
+            <div className='row'>
               {products.telecom.map((v,index)=>
-                <div className='col-md-4' onClick={()=> handleDeityClick('telecom',index)} key={index}>
+                <div className='col-md-3' onClick={()=> handleDeityClick('telecom',index)} key={index}>
                   <Card hoverable cover={<img alt={v.title} src={v.thumImg} />}>
                       <Meta title={v.title}  />
+                  </Card>
+                </div>
+              )}
+              </div>
+          </TabPane>
+          <TabPane tab={'PLASTIC FASTENERS'} key={2}>
+
+            <div className='row'>
+              {products.extraparts.map((item,index)=>
+                <div className='col-md-3' onClick={()=> handleDeityClick('extraparts',index)} key={index}>
+                  <Card hoverable cover={<img alt={item.title} src={item.thumImg} />}>
+                      <Meta title={item.title}  />
                   </Card>
                 </div>
               )}
@@ -70,7 +83,12 @@ function SparesComponent() {
         {
           selected !== null && 
           <div className={`${style.overlay}`} onClick={handleClose}>
-              <Popup selected={products[selected.type][selected.index]} handleClose={handleClose}/>
+              {
+                selected.type=='extraparts' ?
+                  <ExtraPopup selected={products[selected.type][selected.index]} handleClose={handleClose}/>
+                :
+                  <Popup selected={products[selected.type][selected.index]} handleClose={handleClose}/>
+              }
               {/* <SiblingInfo selectDeity={selectDeity} handleClose={handleClose} /> */}
           </div>
         }

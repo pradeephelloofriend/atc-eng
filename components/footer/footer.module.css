@@ -1,0 +1,31 @@
+.width {
+  width: 379px;
+}
+/* CustomStyles.module.css */
+
+.customList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customListItem {
+  width: 152px;
+}
+
+.customParagraph {
+  position: relative;
+  bottom: 12px;
+}
+
+.customParagraph.unit1 {
+  bottom: 10px;
+  width: 368px;
+  right: 20px;
+  
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}

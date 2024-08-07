@@ -11,6 +11,7 @@ import CompaniesComponent from '../components/Home/forCompanies/CompaniesCompone
 import MachinesComponent from '../components/products/MachinesComponent';
 import AboutIntroComponent from '../components/Home/aboutus/AboutIntroComponent';
 import ProcessComponent from '../components/process/ProcessComponent';
+import EngineerProducts from '../components/Home/EngineerProducts';
 const index = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const index = () => {
       {/* <TrialComponent /> */}
       {/* <CompaniesResponsiveComponent /> */}
       {/* <ProductComponent/> */}
-
+      {/* <EngineerProducts /> */}
       {/* <StandForComponent/> */}
       {/* <NetworkComponent /> */}
       {/* <QualitySectionComponent/> */}

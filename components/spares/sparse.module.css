@@ -16,6 +16,16 @@
     
 }
 
+
+.conatainer2{
+    width: 300px;
+}
+
+.conatainer2 img{
+    width: 250px;
+    height: 250px;
+}
+
 .imageContainer {
     position: relative;
     width: 100%;
@@ -54,6 +64,7 @@
 
 .infoTitle{
     font-weight: bold;
+
 }
 
 .infoTitle::after {
@@ -75,7 +86,8 @@
     align-items: center; 
     gap: 5;
     position: relative;
-    background-color: #fcf7f7c2;
+    background-color: #fcf7f7;
+    opacity: 0.9;
     padding: 20px 50px;
     padding-top: 50px;
     box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
@@ -85,7 +97,34 @@
     top:200px;
    
 }
+.deity_info_boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 5;
+    position: relative;
+    background-color: #fcf7f7;
+    opacity: 0.9;
+    padding: 20px 50px;
+    padding-top: 50px;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+    z-index: 20; 
+    height: fit-content;
+    /* margin-top: 100px; */
+    top:200px;
+}
 
+.contains {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+.imageTitle {
+    margin: 0px;
+}
 .overlay {
     position: fixed;
     top: 0;

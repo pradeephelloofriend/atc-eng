@@ -15,7 +15,7 @@ function AboutApurvaComponent() {
                             <div className="nob_left_box">
                                 <div className="head-block">
                                     <h4 className="w-title">Quality Check</h4>
-                                    <p className="w-title1">Setting the Benchmrk for Qaulty</p>
+                                    <p className="w-title1">Setting the Benchmark for Qaulity</p>
                                 </div></div></div>
                         <div className="col-md-9">
                             <div className="nob_box">

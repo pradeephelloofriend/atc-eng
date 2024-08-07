@@ -5,9 +5,25 @@ import { setTabKey } from '../../redux/menu/menuAction';
 import { menuItem } from '../../util/menuItem';
 import { connect } from 'react-redux';
 import { useRouter } from 'next/router';
+import {Popover} from 'antd';
+import {InfoCircleOutlined, QuestionCircleFilled} from '@ant-design/icons'
+import styles from './footer.module.css'
 
 const FooterComponent = ({ setTabKey }) => {
-    
+    const dirContent = (
+        <div className='map'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15387.833115413032!2d73.9307656!3d15.3787457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb934ade25ccd%3A0xd824bf39bd5c56d4!2sATC%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1721110166460!5m2!1sen!2sin" ></iframe>
+          </div>)
+    const unit1= (
+        <div className='map'>
+          <img src='/images/about-us/unit1.jpg' />
+          </div>
+    )
+    const unit2= (
+        <div className='map'>
+          <img src='/images/about-us/unit2.jpg' />
+          </div>
+    )
 	const [menu, setmenuData] = React.useState([]);
 	const [firstMenu, setFirstMenu] = React.useState([]);
 	const router = useRouter()
@@ -48,7 +64,7 @@ const FooterComponent = ({ setTabKey }) => {
 
                             <div className="widget widget_services border-0 n-da">
 
-                                <img className="footer-logo" src='/images/logo/aplogo.png' alt="" style={{width:"", height:"70px"}} />
+                                <img className="footer-logo" src='/images/logo/aplogo.png' alt="" style={{width:"", height:"70px"}} onClick={() => router.push('/')} />
                                 {/* <p className='text-white'>IHM are exclusive dealers for L&T Valves in Telangana. The company has a series of
                                     successful innovations to its credit,
                                     including mission-critical solutions
@@ -97,6 +113,7 @@ const FooterComponent = ({ setTabKey }) => {
                                     </ul>
                             </div> */}
                             </div>
+                            
 
                             <div className="col-md-3">
                                 <div className="widget widget_services border-0 ">
@@ -107,13 +124,21 @@ const FooterComponent = ({ setTabKey }) => {
                                       <li><a onClick={() => router.push('/about-us')}>Quality Infrastructure </a></li>
                                       <li><a onClick={() => router.push('/about-us')}>Commitment to Excellence</a></li>
                                       <li><a onClick={() => router.push('/about-us')}>Client Centric Approach</a></li>
-                                      
-                                  </ul>
+                                       </ul>
+                                       {/* <div style={{marginTop:"60px"}}>
+                                       <div className="widget widget_services border-0 ">
+                                    <h5 className="w-title text-white">Registered Office</h5>
+                                    <ul>
+                                    <li><a>Address</a></li>
+                                    <a style={{color:"white"}}>G/11 JIGISHA BLDG MARGAO GOA</a>
+                                    </ul>
+                                    </div>
+                                </div> */}
                                   </div>
                                     </div>
 
-                                    
-                            <div className="col-md-3">
+
+                                    <div className="col-md-3">
                                 <div className="widget widget_services border-0 ">
                                     <h5 className="w-title text-white">Policy</h5>
                                     
@@ -125,8 +150,72 @@ const FooterComponent = ({ setTabKey }) => {
                                       <li><a onClick={() => router.push('/about-us')}>Client Centric Approach</a></li> */}
                                       
                                   </ul>
+                                  <div style={{marginTop:"30px"}}>
                                   </div>
+                                
+                                  {/* <div className="widget widget_services border-0 ">
+                                    <h5 className="w-title text-white">Office Address</h5>
+                                    
+                                    <ul className={styles.customList}>
+                                        <div className={styles.width}>
+                                      <div className={styles.flexContainer}><li className={styles.customListItem}><a >UNIT 1 <Popover className='dirPop' content={dirContent} >< QuestionCircleFilled  className='ic-le'/></Popover></a> </li> <Popover className='dirPop' content={unit1} ><p lassName={`${styles.customParagraph} ${styles.unit1}`}>PLOT No S-67 VERNA INDUSTRIAL ESTATE VERNA- GOA</p></Popover></div>
+                                      <div className={styles.flexContainer}><li className={styles.customListItem}><a >UNIT 2</a></li><Popover className='dirPop' content={unit2} >  <p className={styles.customParagraph}>ASIA TRADE COMBINES PLOT No 0 11, VERNA INDLUSTRIAL ESTATE VERNA - GOA</p> </Popover></div>
+                                      <div className={styles.flexContainer}><li className={styles.customListItem}><a >UNIT 3</a></li> <p className={styles.customParagraph}>ATC POLY INDUSTRIES C109,M.I.D.C SUPA PARNER, DIST:AHMEDNAGAR MAHARASHTRA</p></div>
+                                     <div className={styles.flexContainer}> <li className={styles.customListItem}><a >UNIT 4</a></li> <p  className={styles.customParagraph}>ATC POLYLEX INDUSTRIES D5,6 G.I.D.C KUNDAIM INDL.ESTAE KUNDAIM - GOA</p></div>
+                                      </div>
+                                       </ul>
+                                      </div> */}
+                                      </div>
+                                      </div>
                                     </div>
+                                    </div>
+
+
+                                  
+                                
+
+
+
+                                {/*<div >
+                                <div className="widget widget_services border-0 ">
+                                    <h5 className="w-title text-white">Unit2 </h5>
+                                    <ul>
+                                    <li><i className="ti-location-pin "></i>
+            <strong>Address
+              <Popover className='dirPop' content={unit2} ><InfoCircleOutlined className='ic-info' /></Popover>
+              <p>ASIA TRADE COMBINES PLOT No 0 11, VERNA INDLUSTRIAL ESTATE VERNA - GOA</p>
+            </strong></li>
+                                    </ul>
+                                </div>
+                                </div> 
+
+                                <div className="col-md-3">
+                                <div className="widget widget_services border-0 ">
+                                    <h5 className="w-title text-white">Unit3 </h5>
+                                    <ul>
+                                    <li><i className="ti-location-pin "></i>
+            <strong>Address
+             <p>ATC POLY INDUSTRIES C109,M.I.D.C SUPA PARNER, DIST:AHMEDNAGAR MAHARASHTRA</p>
+            </strong></li>
+                                    </ul>
+                                </div>
+                                </div>     
+
+
+                                 <div className="col-md-3">
+                                <div className="widget widget_services border-0 ">
+                                    <h5 className="w-title text-white">Unit4 </h5>
+                                    <ul>
+                                    <li><i className="ti-location-pin "></i>
+            <strong>Address
+             <p>ATC POLYLEX INDUSTRIES D5,6 G.I.D.C KUNDAIM INDL.ESTAE KUNDAIM - GOA</p>
+            </strong></li>
+                                    </ul>
+                                </div>
+                                </div> */ }        
+             
+                                    
+                           
 
                         {/* <div className="col-md-3">
                                 <div className="widget widget_services border-0 ">
@@ -177,8 +266,8 @@ for defence and aerospace Industries.
                             
 
                         </div>
-                    </div>
-                </div>
+                    
+                
 
                 <div className="footer-bottom bg-red-c">
                     <div className="container">

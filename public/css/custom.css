@@ -1154,19 +1154,41 @@ p.special-heading {
     left: 0;
 }
 .footer-bottom{
-    background-color: #1e7b82c7  !important ;
+    background-color: #1e7b82  !important;
+    /* background-color: #1e7b82c7  !important ; */
     font-family: "NeoSansStd-Regular";
 }
 .footer-area .widget_services p{
     font-family: "NeoSansStd-Regular";
-    color: #747474;
+    position: relative;
+    top: 8px;
+    color: #f4f4f4;
     font-size: 15px;
     margin-top: 15px;
     text-transform: none;
-    text-align: justify;
+    text-align: left;
 }
 footer .widget_services ul li a:hover{
    color: #cf2030; 
+}
+.visionTabs .ant-tabs-tab {
+    font-size: 30px; /* Increase this value to make the font size larger */
+    padding: 8px 24px;
+    text-align: center;
+  }
+  
+
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs .ant-tabs-content {
+    padding-left: 50px;
+    position: relative;
+    width: 100%;
+}
+@media only screen and (max-width: 700px) and (min-width: 350px) {
+    :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >div>.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >div>.ant-tabs-nav .ant-tabs-tab {
+        padding: 8px 24px;
+        text-align: center;
+        font-size: 10px;
+    }
 }
 /* Footer social */
 
@@ -2256,6 +2278,7 @@ background-color: #cf2030;
 
 .accordion-group li.out {
     width: 60%;
+    height: 255px;
 }
 
 .accordion-group li.out section article {
@@ -3398,6 +3421,7 @@ width: 65px;
     display: none; /* Hide the active indicator */
   }
   .ant-tabs-left > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+    width: 100%;
     padding-left: 0px;
   }
   .image-div {
@@ -3969,6 +3993,11 @@ text-decoration: underline;
     .get-class .ant-btn-primary {
         background-color: #517c97;
         width: 430px;
+    }
+    @media screen and (min-width: 400px) and (max-width: 900px) {
+        .get-class .ant-btn-primary {
+            width: 227px;
+        }
     }
     .get-class .anticon {
         vertical-align: 1px;
@@ -4608,14 +4637,15 @@ background-color: #fff;
     font-weight: normal;
 }
 .diff-class .col-md-6 {
-    padding-top: 15px;
+    width: 100%;
+    padding-top: px;
 }
 .nob_left_box {
     position: relative;
     padding: 45px;
 }
 .nob_box .acco-container {
-    height: 266px;
+    height: 328px;
     padding: 0% 0%;
 }
 
@@ -4799,7 +4829,8 @@ background-color: #fff;
     right: 0;
 }
 .nob_box .accordion-group li img {
-    height: 265px;
+    height: 267px;
+    /* width: 289px; */
 }
 .disc-clas {
     padding: 20px 0px;
@@ -4811,8 +4842,8 @@ background-color: #fff;
     padding-left: 30px;
 }
 .ic-le {
-    padding-left: 10px;
-    font-size: 25px;
+    padding-left: 1px;
+    font-size: 19px;
     color: #1f445b;
 }
 
@@ -4860,6 +4891,7 @@ height: 300px;
     margin-top: 10px;
 }
 .ml-0{
+    width: 1200px;
     margin-left: 0px;
 }
 .tan-class .ant-tabs >.ant-tabs-nav .ant-tabs-nav-operations, .ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-operations{

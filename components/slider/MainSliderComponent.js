@@ -37,7 +37,7 @@ const MainSliderComponent = () => {
                    <h4>Welcome to ATC Industries</h4>
                   
                   <p>one-stop shop for injection molding, extrusion, blow molding, thermoforming of plastic components, and HF-welded fabric parts.</p>
-                  <a href="#" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
+                  <a href="/spares" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
                 </div> 
               </SwiperSlide>
               <SwiperSlide>
@@ -47,7 +47,7 @@ const MainSliderComponent = () => {
                   <h4>Welcome to ATC Industries</h4>
                   
                   <p>Agnel group a goan native a diversified business.</p>
-                  <a href="#" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
+                  <a href="/about-us" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
                 </div> 
               </SwiperSlide>
             </Swiper>

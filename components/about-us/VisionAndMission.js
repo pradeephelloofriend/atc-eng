@@ -9,7 +9,7 @@ const VisionAndMission = () => {
     <div className={` ${styles.newl}  `} >
     
         
-      <div className="container " style={{display:"flex",flexWrap:"wrap",justifyContent:"center",alignContent:"center",gap:"30px"}}  >
+      <div className="container " style={{display:"flex",flexWrap:"wrap",justifyContent:"center",alignContent:"center",gap:"30px",paddingTop:"30px",backgroundColor:"#f5f5f5"}}  >
      
       < AboutLeadershipComponent />
       

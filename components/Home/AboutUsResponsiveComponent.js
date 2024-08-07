@@ -31,12 +31,12 @@ function AboutUsResponsiveComponent() {
 				<div className={styles.first_tab}>
 					<div className='row'>
 						<div className='col-md-4'>
-							<img src='/images/about_us.png' />
+							{/*<img src='/images/about_us.png' >*/}
 						</div>
 						<div className='col-md-8'>
 							<h4>Welcome to ATC Industries</h4>
 							<p>ATC Industries, a dynamic partnership established in 1996 by the esteemed late Mr. A. T. Shah, has steadily grown to provide unparalleled service to our customers. With a strategic multi-location presence, we are dedicated to delivering exceptional solutions that meet diverse needs across various sectors.</p>
-							<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>
+							{/*<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>*/}
 						</div>
 						{/* <div className={`col-md-4 ${styles.icon_cl} icon_cl`}>
 							<h4>Our Services</h4>
@@ -98,7 +98,7 @@ function AboutUsResponsiveComponent() {
 						<div className='col-md-8'>
 							<h4>Missions</h4>
 							<p>Our mission is to empower our clients with superior technical expertise and unparalleled service, enabling them to enhance the efficiency, safety, and performance of their operations. We are dedicated to delivering innovative solutions tailored to meet the unique needs of each client, while upholding the highest standards of professionalism, integrity, and environmental responsibility. Through continuous improvement and investment in our people, processes, and technology, we strive to exceed expectations and create long-term value for our stakeholders.</p>
-							<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>
+							{/*<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>*/}
 						</div>
 						{/* <div className={`col-md-4 ${styles.icon_cl} icon_cl`}>
 						<h4>Our Services</h4>
@@ -133,7 +133,7 @@ function AboutUsResponsiveComponent() {
 						<div className='col-md-4'>
 						{/*<p>Apurva Engineering registered as MSME dated 04th October 2017 and moving on fast-track at its milestones.</p>*/}
 						{/* <p>Franklin’s extraordinary success in life and politics can be attributed to his perseverance to overcome his personal liabilities.</p> */}
-						<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>
+						{/*<Button onClick={() => router.push('/contact-us')}>Request a Quote</Button>*/}
 						</div>
 							{/* <div className={`col-md-4 ${styles.icon_cl} icon_cl`}>
 							<h4>Our Achievements</h4>

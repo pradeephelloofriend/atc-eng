@@ -65,10 +65,16 @@
   .abt_his {
     padding: 40px 0px;
   }
+  .row {
+    padding: 0px;
+  }
   .hoverable {
+    border-radius: 8px;
     transition: transform 0.3s ease;
-    width: 500px;
-    padding: 15px;
+    width: 573px;
+    padding: 45px;
+    background-color:  hsl(60, 60%, 99%);
+    box-shadow: 0 9px 10px rgba(21, 19, 19, 0.2);
   }
   .hoverable:hover {
     transform: scale(1.05);
@@ -79,8 +85,27 @@
     align-items: center;
   }
   .image .imag{
-    width: 70%;
+    width: 20%;
   }
+  .imag {
+    padding: 10px;
+    width: 200px; /* Small size */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+  }
+  
+  .imag.enlarged {
+    transform: scale(1.4); /* Enlarge by 1.5 times */
+  }
+  
+ 
+
+.visionTabs .ant-tabs-tab {
+  font-size: 18px; 
+}
+
+
   @media (max-width: 476px) {
     .image .imag{
         width: 100%;
@@ -88,6 +113,7 @@
 .hoverable{
     width: 800px;
     gap: 70px;
+    
 }
     .butclass {
         padding: 20px;
@@ -106,3 +132,50 @@
     line-height: 32px;
     }
   }
+  /* <div data-node-key="1" class="ant-tabs-tab ant-tabs-tab-active"><div role="tab" aria-selected="true" class="ant-tabs-tab-btn" tabindex="0" id="rc-tabs-0-tab-1" aria-controls="rc-tabs-0-panel-1">2006-07</div></div> */
+  .ant-tabs-tab-btn{
+    font-size:30px;
+  }
+.fs {
+  font-size: 30px;
+}
+.tabSize {
+  width: 900px;
+  padding-left: 20px;
+}
+.deity_info_boxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 5;
+  position: relative;
+  background-color: #fcf7f7;
+  opacity: 0.9;
+  padding: 20px 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+  z-index: 20; 
+  height: fit-content;
+  /* margin-top: 100px; */
+  top:200px;
+ 
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 12, 0.5); 
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  /* align-items: center;  */
+  z-index: 10;
+  overflow-y: auto;
+ 
+}
+
+  

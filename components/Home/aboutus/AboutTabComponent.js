@@ -29,7 +29,7 @@ function AboutTabComponent(
                                 <div className=''>
                                     <h4>{head1}</h4>
                                     <p>{para1}</p>
-                                    <Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>
+                                    {/*<Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>*/}
                                 </div>
                                 {/* <div className={`col-md-4 ${styles.icon_cl} icon_cl`}>
                                     <h4>{head2}</h4>
@@ -86,7 +86,7 @@ function AboutTabComponent(
                                 <div className='col-md-8'>
                                     <h4>{head7}</h4>
                                     <p>{para6}</p>
-                                    <Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>
+                                   {/* <Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>*/}
                                 </div>
                                 {/* <div className={`col-md-4 ${styles.icon_cl} icon_cl`}>
                                 <h4>{head2}</h4>
@@ -114,7 +114,7 @@ function AboutTabComponent(
                                     <h4>{head6}</h4>
                                     <p>{para4}</p>
                                   { /* <p>{para3}</p>*/}
-                                  <Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>
+                                  {/*<Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>*/}
                                 </div>
                                 {/* <div className='col-md-4'>
                                 <p>{para5}</p>

@@ -89,28 +89,64 @@ function ReviewComponent() {
     <div className={`${styles.review_class} container`}>
       <div className='row'>
         <div className={'col-md-7  swip'}>
-            <Card>
-                <h2>Check out <span className={styles.head_class}>Review</span></h2>
+            <Card >
+                <h2 style={{marginBottom:"-29px",fontSize:"25px"}}><b>Testimonials</b> {/*<span className={styles.head_class}>Review</span>*/}</h2>
                 <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+           delay: 30000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}>
-                 <SwiperSlide>
+                 {/* <SwiperSlide>
                   <div className={styles.sw_cont}>
                     <h2> Filter Air Cleaner for Front Loading Clothes Dryer</h2>
                      <p>The filter air cleaner for front-loading clothes dryers is a game-changer for maintaining indoor air quality. I was tired of dust and lint circulating in my laundry room, so I installed this filter. It effectively traps lint and particles, preventing them from entering the dryer vent and circulating back into the air. The installation was simple—just snap it into place inside the dryer door. Now, my laundry area stays cleaner, and the dryer operates more efficiently. This filter air cleaner is a small investment with significant benefits for anyone with a front-loading dryer.</p>
                     <h6>Emily R.,<span className={styles.color_div}> Procurement Specialist</span></h6>
                   </div>
                   
+                 </SwiperSlide> */}
+                 
+                 
+                 <SwiperSlide>
+                <div className={styles.testimonial_container} >
+                  <div className={styles.testimonial_header}> Filter Air Cleaner for Front Loading Clothes Dryer</div>
+                    <div className={styles.testimonial_content}>
+                      <div className={styles.testimonial_text}>
+                      <div className={styles.blockquote}>
+                        <p>The filter air cleaner for front-loading clothes dryers is a game-changer for maintaining indoor air quality. I was tired of dust and lint circulating in my laundry room, so I installed this filter. It effectively traps lint and particles, preventing them from entering the dryer vent and circulating back into the air. The installation was simple just snap it into place inside the dryer door. Now, my laundry area stays cleaner, and the dryer operates more efficiently. This filter air cleaner is a small investment with significant benefits for anyone with a front-loading dryer.</p>
+                       </div>
+                        <h6 className={styles.testimonial_name}>Emily R.,<span className={styles.color_div}> Procurement Specialist</span></h6>
+                    </div>
+                  </div>
+                </div>
+                  </SwiperSlide>
+                    <SwiperSlide>
+                    <div className={styles.testimonial_container} >
+                  <div className={styles.testimonial_header}> Precision Engineering Plastic Components for Dryers</div>
+                  <div className={styles.testimonial_content}>
+                      <div className={styles.testimonial_text}>
+                        <div className={styles.blockquote}><p>
+                  These precision-engineered plastic components for dryers exceeded my expectations. I needed to replace some worn parts in my dryer, and these components fit perfectly. The plastic is sturdy and well-crafted, ensuring durability and smooth operation. I appreciate the attention to detail in their design, which made assembly straightforward. These components have restored my dryer to like-new condition, making them an excellent choice for anyone needing reliable replacement parts.</p></div>
+                    <h6 className={styles.testimonial_name}>John D.,<span className={styles.color_div}> Operations Director</span></h6></div>
+                    </div>
+                    </div>
+                    </SwiperSlide>
+                 <SwiperSlide>
+                 <div className={styles.testimonial_container} >
+                 <div className={styles.testimonial_header}> Vent Kit for Clothes Dryers</div>
+                 <div className={styles.testimonial_content}>
+                      <div className={styles.testimonial_text}>
+                        <div className={styles.blockquote}>
+                  <p>The vent kit for clothes dryers is a must-have accessory for anyone looking to improve ventilation efficiency. I installed this kit in minutes—it fit perfectly with my dryer and the exterior wall vent. The components are well-made and durable, ensuring a secure connection that prevents lint buildup and enhances dryer performance. Now, I have peace of mind knowing that my dryer operates safely with improved airflow. This vent kit is definitely worth the investment for its quality and ease of installation.</p></div>
+                 <h6 className={styles.testimonial_name}><b>Sarah L.,</b><span className={styles.color_div}> Project Engineer</span></h6>
+                 </div>
+                 </div>
+                 </div>
                  </SwiperSlide>
-                 
-                 
            </Swiper>
         <div className={styles.swip} >
           <ClientListComponent/>

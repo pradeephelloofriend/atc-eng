@@ -19,8 +19,13 @@ function Popup({ selected, handleClose }) {
                         <h1 style={{color:"black"}} className={styles.infoTitle}>{selected.title}</h1>
                     <div style={{ textAlign: "justify", color:"black", fontSize:"18px"}} dangerouslySetInnerHTML={{ __html: selected.desc }}></div>
                 </div>
+
+                
             }
-        </div>
+            
+</div>
+
+             
     );
 }
 

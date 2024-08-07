@@ -19,7 +19,7 @@ const AboutUsComponent = () => {
          title4='Our History'
          head1='Welcome to ATC Industries'
          para1='ATC Industries, a dynamic partnership established in 1996 by the esteemed late Mr. A. T. Shah, has steadily grown to provide unparalleled service to our customers. With a strategic multi-location presence, we are dedicated to delivering exceptional solutions that meet diverse needs across various sectors.'
-          buttoncon='Request a Quote'
+          //buttoncon='Request a Quote'
           head2='Our Services'
           list1='Award-winning design'
           list2='Super Fast Customer support'

@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './abt.module.css'
-import { Card } from 'antd'
+import { Card,Tabs } from 'antd'
+
+const { TabPane } = Tabs;
 
 const VisionComponent = () => {
   return (
@@ -11,18 +13,28 @@ const VisionComponent = () => {
               </h4>
               <p className='w-title1'>A skilled leader who excels in guiding teams</p>
             </div>
-            <div className='row pt-4'>
+            <div >
+            <Tabs tabPosition='left'  className='visionTabs'>
+                
+            <TabPane   tab="2006-07" key="1" >
+                <div >
+            <div className={styles.row} style={{padding:"0px"}}>
                 <div className='col-md-6 text-center'>
                     <Card hoverable>
-                        <h1>2006-07</h1>
+                        <h1 className='fs'>2006-07</h1>
                         <h3>Our Journey with CommScope: 2006-07
                         </h3>
                         <h6>
-                        In 2006-07, ATC Industries embarked on a transformative journey with Andrew Telecommunications, now part of CommScope. We specialized in the development and supply of thermoformed microwave antenna radomes, ranging from 4ft to 6ft diameters across various frequencies.
+                        In 2006-07, ATC Industries embarked on a transformative journey with Andrew Telecommunications, now part of CommScope. We specialized in the development and supply of thermoformed microwave antenna radomes, ranging from 4ft to 6ft diameters across various frequencies</h6>
 
-</h6><h6>Previously imported, these radomes were successfully localized in India, enhancing the supply chain with significant cost benefits and adding substantial value to our offerings.</h6>
+                        <h6>Previously imported, these radomes were successfully localized in India, enhancing the supply chain with significant cost benefits and adding substantial value to our offerings.</h6>
                     </Card>
+                  
                 </div>
+                </div>
+                </div>
+                </TabPane>
+                <TabPane tab="Year 2008" key="2">
                 <div className='col-md-6 text-center'>
                     <Card hoverable>
                         <h1>Year 2008
@@ -34,7 +46,10 @@ const VisionComponent = () => {
 </h6>
 
                     </Card>
-                </div>
+                    </div>
+                    </TabPane>
+                
+                <TabPane tab="Year 2016" key="3">
                 <div className='col-md-6 text-center'>
                     <Card hoverable>
                         <h1>Year 2016
@@ -46,7 +61,10 @@ const VisionComponent = () => {
 </h6> <h6> Our commitment to this project included the deployment of new machinery, skilled manpower, and comprehensive system enhancements to ensure seamless support and operational excellence.
 </h6>
                     </Card>
-                </div>
+                    </div>
+                    </TabPane>
+                
+                <TabPane tab="Years 2017-18" key="4">
                 <div className='col-md-6 text-center'>
                     <Card hoverable>
                         <h1> Years 2017-18
@@ -60,7 +78,10 @@ const VisionComponent = () => {
                       
                       
                     </Card>
-                </div>
+                    </div>
+                    </TabPane>
+                
+                <TabPane tab="Years 2020-21" key="5">
                 <div className='col-md-6 text-center'>
                     <Card hoverable>
                         <h1> Years 2020-21
@@ -71,14 +92,17 @@ const VisionComponent = () => {
 
                         </h6><h6>Simultaneously, our expansion plans for Unit 2 were already in progress, allowing us to leverage all necessary infrastructure to facilitate and enhance this initiative.</h6>
                     </Card>
-
+                    </div>
+                    </TabPane>
                     
-                </div>
+        </Tabs>
+        </div>       
+               
 
 
             </div>
       </div>
-      </div>
+      
   )
 }
 
