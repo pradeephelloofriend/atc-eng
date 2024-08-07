@@ -1154,8 +1154,8 @@ p.special-heading {
     left: 0;
 }
 .footer-bottom{
-    background-color: #1e7b82  !important;
-    /* background-color: #1e7b82c7  !important ; */
+    /* background-color: #1e7b82  !important; */
+    background-color: #1e7b82c7  !important ;
     font-family: "NeoSansStd-Regular";
 }
 .footer-area .widget_services p{
