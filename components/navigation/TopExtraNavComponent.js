@@ -2,7 +2,7 @@ import { Dropdown, Space, Popover } from 'antd'
 import React from 'react'
 import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
-import VisionComponent from '../about-us/VisionComponent';
+import VisionComponent from '../about-us/HistoryComponentTabs';
 
 const TopExtraNavComponent = ({ isFixed }) => {
     const router = useRouter()

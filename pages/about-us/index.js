@@ -6,7 +6,7 @@ import AboutNetworkComponent from '../../components/about-us/AboutNetworkCompone
 import AboutLeadershipComponent from '../../components/about-us/AboutLeadershipComponent';
 import AboutRecognitionComponent from '../../components/about-us/AboutRecognitionComponent';
 import MissionComponent from '../../components/about-us/MissionComponent';
-import VisionComponent from '../../components/about-us/VisionComponent';
+import HistoryComponentTabs from '../../components/about-us/HistoryComponentTabs';
 import AboutGetToComponent from '../../components/about-us/AboutGetToComponent';
 import AboutHistoryComponent from '../../components/about-us/AboutHistoryComponent';
 import ClientsComponent from '../../components/clients/ClientsComponent'
@@ -22,7 +22,7 @@ const index = () => {
     <AboutIhmComponent/>
     <AboutApurvaComponent />
     <VisionAndMission/>
-    <VisionComponent/>
+    <HistoryComponentTabs/>
     
     {/* <AboutLeadershipComponent /> */}
     {/*<AboutNetworkComponent />*/}

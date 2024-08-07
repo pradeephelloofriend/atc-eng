@@ -4,7 +4,7 @@ import { Card,Tabs } from 'antd'
 
 const { TabPane } = Tabs;
 
-const VisionComponent = () => {
+const HistoryComponentTabs = () => {
   return (
     <div className={`${styles.dif_class} diff-class`}>
     <div className='container'>
@@ -106,4 +106,4 @@ const VisionComponent = () => {
   )
 }
 
-export default VisionComponent
+export default HistoryComponentTabs
