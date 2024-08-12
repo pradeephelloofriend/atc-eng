@@ -78,7 +78,7 @@ export const products = {
     telecom:[
         {
             title:'4FT FABRIC RADOME FOR MICROWAVE ANTENNAS',
-            thumImg:'/images/products/telecomm1.jpg',
+            thumImg:'/images/products/4FT-FABRIC-RADOME.jpg',
             desc:' <h1>4ft Fabric Radome for Microwave Antennas</h1> <ul style="margin:0">   <li><strong>Purpose:</strong> The 4ft fabric radome serves as a protective cover for microwave antennas used in telecom infrastructure.</li>        <li><strong>Material:</strong> Constructed from durable, weather-resistant fabric designed to withstand outdoor conditions.</li>        <li><strong>Function:</strong> Protects antenna equipment from environmental elements such as wind, rain, snow, and UV radiation, ensuring consistent performance and longevity.</li>        <li><strong>Design:</strong> Lightweight and flexible, facilitating easy installation and maintenance without compromising antenna signal transmission.</li>        <li><strong>Benefits:</strong> Enhances antenna durability and reliability, maintaining signal integrity and minimizing maintenance requirements in telecommunications networks.</li>    </ul>',
             descImg:[
                 '/images/products/telecomm1.jpg',
@@ -87,7 +87,7 @@ export const products = {
         },
         {
             title:'Thermoformed Radomes',
-            thumImg:'/images/products/telecomm2.jpg',
+            thumImg:'/images/products/Thermoformed-Radomes.jpg',
             desc:' <h1>Thermoformed Radomes</h1>    <ul style="margin:0">        <li><strong>Available Sizes:</strong> We offer thermoformed radomes in 2ft, 3ft, 4ft, and 6ft diameters.</li>  <ul style="margin:0"><p>Discover how our high-quality thermoformed radomes optimize performance and reliability in telecom infrastructure.</p>',
             descImg:[
                 '/images/products/telecomm2.jpg',
@@ -96,7 +96,7 @@ export const products = {
         },
         {
             title:'THERMOFORMED EPS PALLETS:',
-            thumImg:'/images/products/telecomm4.jpg',
+            thumImg:'/images/products/Thermoformed-EPS-Pallets.jpg',
             desc:'<h1>Thermoformed EPS Pallets</h1>    <ul style="margin:0">        <li><strong>Product Description:</strong> Thermoformed EPS pallets are designed using HIPS sheet material, providing a sturdy and lightweight solution for material handling and logistics.</li>        <li><strong>Material Composition:</strong> EPS (Expanded Polystyrene) offers excellent cushioning properties, while HIPS sheet enhances strength and durability.</li>        <li><strong>Features:</strong>             These pallets are lightweight, resistant to moisture, and capable of withstanding heavy loads, making them suitable for various industrial applications.       </li>        <li><strong>Benefits:</strong>: They offer cost-effectiveness, ease of handling, and recyclability, contributing to sustainable packaging solutions.       </li>        <li><strong>Applications:</strong> Ideal for use in warehouses, distribution centers, and transportation industries where lightweight, durable pallets are required for efficient logistics and storage.</li>    </ul>',
             descImg:[
                 '/images/products/telecomm5.jpg'
@@ -104,7 +104,7 @@ export const products = {
         },
         {
             title:'RADOMES FOR TELECOM SECTOR',
-          thumImg:'/images/products/telecomm6.jpg',
+          thumImg:'/images/products/RADOMES-FOR-TELECOM-SECTOR.jpg',
             desc:'<h1>Radomes for Telecom Sector</h1>     <ul style="margin:0">       <li><strong>Purpose:</strong> Radomes are essential protective enclosures used to shield sensitive telecom equipment, such as antennas and transmitters, from environmental factors.</li>        <li><strong>Function: </strong>They safeguard equipment from rain, wind, snow, and UV radiation without impeding signal transmission.</li>        <li><strong>Material: </strong> Typically made from durable materials like fiberglass or composite materials that are weather-resistant and transparent to radio waves</li>        <li><strong>Benefits: </strong> Radomes ensure reliable operation of telecom infrastructure by maintaining signal integrity and minimizing maintenance downtime.</li>        <li><strong>Applications: </strong> Widely deployed in both terrestrial and satellite communication systems, ensuring uninterrupted communication services in diverse environmental conditions.</li>    </ul>',
             descImg:[
                 '/images/products/telecomm6.jpg',
@@ -113,7 +113,7 @@ export const products = {
         },
         {
             title:'POLYCARBONATE RADOME FOR BASE STATION ANTENNAS',
-            thumImg:'/images/products/telecomm7.jpg',
+            thumImg:'/images/products/POLYCARBONATE-RADOME.jpg',
             desc:'<ul><li>OUR ENDEVOUR IS ALWAYS TO SUPPORT OUR CUSTOMERS FOR VARIOUS PROJECTS AS ENVISAGED BY THEM.</li><li>WE PUT IN ALL EFFORTS TO ACHIEVE THE OBJECTIVES AS WOULD BE EXPECTED FROM US.</li><li>ONE OF THE INITIATIVES WE HAD SUPPORTED FOR NPI WAS PC BSA ANTENNA.</li>',
             descImg:[
                 '/images/products/telecomm8.jpg',
@@ -125,7 +125,7 @@ export const products = {
     extraparts:[
         {
             title:'Cable Fasteners',
-            thumImg:'/images/products/transportation_tube.jpg',
+            thumImg:'/images/products/SS-HOSE-CLAMP-840.jpg',
             descImg:[
                 
                 {imgSrc:'/images/products/transportation_tube.jpg',title:'TRANSPORTATION TUBE'},
@@ -141,7 +141,7 @@ export const products = {
         },
         {
             title:'Radomes',
-            thumImg:'/images/products/BRASS_FRP_HOLDERS.jpg',
+            thumImg:'/images/products/EARTHING-CABLE.jpg',
             descImg:[
                 {imgSrc:'/images/products/BRASS_FRP_HOLDERS.jpg',title:'BRASS FRP HOLDERS'},
                 {imgSrc:'/images/products/fibre_ferrules.jpg',title:'FIBRE FERRULES'},

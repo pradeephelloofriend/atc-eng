@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect, useRef, useState} from 'react'
 import styles from './abt.module.css'
 import CertificatePopup from './CertificatePopup'
 import { useRouter } from 'next/router';
@@ -15,9 +15,10 @@ const Certificates = {
 };
  const Certificate = () => {
   const router = useRouter()
+  const ref = useRef()
     useEffect(()=>{
         if (router.query.ref == 'certi') {
-            document.getElementById('certi').scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
+          ref.current.scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
         }
     },[router.query])
   // const [isEnlarged, setIsEnlarged] = useState(false);
@@ -37,7 +38,7 @@ const Certificates = {
     setIsEnlarged(!isEnlarged);
   };
   return (
-    <div id='certi'>
+    <div ref={ref}>
       <div className={` ${styles.newl}  `} >
     <div className='container'>
         <div className='head-block-center text-center'>

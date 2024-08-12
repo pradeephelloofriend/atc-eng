@@ -75,7 +75,7 @@ const FooterComponent = ({ setTabKey }) => {
                                     <a className='text-white'> ATC Industries, specializes in manufacturing high-quality engineering polymer components for OEMs in the home appliances, telecom equipment, and automobile sectors.
                                     </a><br></br>
                                     <a className='text-white'>Contact us: +91 7841069245</a><br></br>
-                                    <a className='text-white'>Email: <u>apurvaengineering23@gmail.com</u></a><br></br>
+                                    <a className='text-white'>Email: <u>test@gmail.com</u></a><br></br>
                                     <a className='text-white'>GST: 30CBAPR9562D1ZS</a><br></br>
                                     
                                     {/* <a className='text-white'>Reach out: <u>rc-reachout@adports.ae</u></a><br></br> */}
@@ -121,9 +121,9 @@ const FooterComponent = ({ setTabKey }) => {
                                     
                                     <ul>
                                       <li><a onClick={() => router.push('/about-us')}>Our Expertise</a></li>
-                                      <li><a onClick={() => router.push('/about-us')}>Quality Infrastructure </a></li>
+                                      <li><a onClick={() => router.push('/quality-check')}>Quality Infrastructure </a></li>
                                       <li><a onClick={() => router.push('/about-us')}>Commitment to Excellence</a></li>
-                                      <li><a onClick={() => router.push('/about-us')}>Client Centric Approach</a></li>
+                                      <li><a onClick={() => router.push('/reports')}>Reports</a></li>
                                        </ul>
                                        {/* <div style={{marginTop:"60px"}}>
                                        <div className="widget widget_services border-0 ">

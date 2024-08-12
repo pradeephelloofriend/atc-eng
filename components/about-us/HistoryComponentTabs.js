@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from './abt.module.css'
 import { Card,Tabs } from 'antd'
 import { useRouter } from 'next/router';
@@ -7,13 +7,14 @@ const { TabPane } = Tabs;
 
 const HistoryComponentTabs = () => {
     const router = useRouter()
+    const ref = useRef()
     useEffect(()=>{
         if (router.query.ref == 'history') {
-            document.getElementById('history').scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
+            ref.current.scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
         }
     },[router.query])
   return (
-    <div className={`${styles.dif_class} diff-class`} id='history'>
+    <div className={`${styles.dif_class} diff-class`} ref={ref}>
     <div className='container'>
         <div className='head-block-center text-center'>
               <h4 className="w-title">OUR JOURNEY WITH COMMSCOPE

@@ -92,7 +92,7 @@ function PrivacyComponent() {
 <li>Changes to Terms of Use: Apurva Engineering reserves the right to modify or replace these Terms of Use at any time without prior notice. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms of Use. Please review these terms periodically for changes.
 </li>
 <li>Governing Law: These Terms of Use shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any dispute will be dealt in jurisdiction of goa.</li>
-<li>Contact Us: If you have any questions about these Terms of Use, please contact us at  Apurvaengineering23@gmail.com</li>
+<li>Contact Us: If you have any questions about these Terms of Use, please contact us at  test@gmail.com</li>
 </ul>
                                 </div>
                                 <div className="head-block">
@@ -163,7 +163,7 @@ We may also disclose your personal information:
 <div className="head-block">
                                     <h4 className="w-title">Contact Us</h4>
                                 </div>
-                                <p>If you have any questions or concerns about our Privacy Policy, please contact us at apurvaengineering23@gmail.com
+                                <p>If you have any questions or concerns about our Privacy Policy, please contact us at test@gmail.com
 
 
 

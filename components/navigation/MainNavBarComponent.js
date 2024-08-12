@@ -74,7 +74,7 @@ const MainNavBarComponent =()=>{
                                             <div className='icon-box'>
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                                             </div>
-                                            <h6>apurvaengineering23@gmail.com
+                                            <h6>test@gmail.com
                                             </h6>
                                         </a>
                                     </li>
