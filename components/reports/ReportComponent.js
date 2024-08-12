@@ -97,6 +97,8 @@ const generateTransposedColumns = (data) => {
                                 pagination={false} // Disable pagination to show all rows
                                 bordered
                                 style={{ marginBottom: '20px' }}
+                                scroll={{ x: 'max-content' }}
+                                showHeader={false}
                             />
                         }
 
