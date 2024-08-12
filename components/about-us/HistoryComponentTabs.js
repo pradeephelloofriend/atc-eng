@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './abt.module.css'
 import { Card,Tabs } from 'antd'
+import { useRouter } from 'next/router';
 
 const { TabPane } = Tabs;
 
 const HistoryComponentTabs = () => {
+    const router = useRouter()
+    useEffect(()=>{
+        if (router.query.ref == 'history') {
+            document.getElementById('history').scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
+        }
+    },[router.query])
   return (
-    <div className={`${styles.dif_class} diff-class`}>
+    <div className={`${styles.dif_class} diff-class`} id='history'>
     <div className='container'>
         <div className='head-block-center text-center'>
               <h4 className="w-title">OUR JOURNEY WITH COMMSCOPE
@@ -16,10 +23,10 @@ const HistoryComponentTabs = () => {
             <div >
             <Tabs tabPosition='left'  className='visionTabs'>
                 
-            <TabPane   tab="2006-07" key="1" >
+            <TabPane   tab={<span>2006-07</span>} key="1" >
                 <div >
             <div className={styles.row} style={{padding:"0px"}}>
-                <div className='col-md-6 text-center'>
+                <div className=' text-center'>
                     <Card hoverable>
                         <h1 className='fs'>2006-07</h1>
                         <h3>Our Journey with CommScope: 2006-07
@@ -35,7 +42,7 @@ const HistoryComponentTabs = () => {
                 </div>
                 </TabPane>
                 <TabPane tab="Year 2008" key="2">
-                <div className='col-md-6 text-center'>
+                <div className=' text-center'>
                     <Card hoverable>
                         <h1>Year 2008
                         </h1>
@@ -50,7 +57,7 @@ const HistoryComponentTabs = () => {
                     </TabPane>
                 
                 <TabPane tab="Year 2016" key="3">
-                <div className='col-md-6 text-center'>
+                <div className=' text-center'>
                     <Card hoverable>
                         <h1>Year 2016
                         </h1>
@@ -65,7 +72,7 @@ const HistoryComponentTabs = () => {
                     </TabPane>
                 
                 <TabPane tab="Years 2017-18" key="4">
-                <div className='col-md-6 text-center'>
+                <div className=' text-center'>
                     <Card hoverable>
                         <h1> Years 2017-18
 
@@ -82,7 +89,7 @@ const HistoryComponentTabs = () => {
                     </TabPane>
                 
                 <TabPane tab="Years 2020-21" key="5">
-                <div className='col-md-6 text-center'>
+                <div className=' text-center'>
                     <Card hoverable>
                         <h1> Years 2020-21
                         </h1>

@@ -14,15 +14,17 @@ import ReviewComponent from '../../components/Home/getInTouch/ReviewComponent';
 import AboutApurvaComponent from '../../components/about-us/AboutApurvaComponent';
 import VisionAndMission from '../../components/about-us/VisionAndMission';
 import  Certificate  from '../../components/about-us/Certificate';
+import HistoryComponent from '../../components/about-us/HistoryComponent';
 const index = () => {
  
   return (
     <>
     <AboutBreadCumbComponent/>
     <AboutIhmComponent/>
-    <AboutApurvaComponent />
+    {/* <AboutApurvaComponent /> */}
     <VisionAndMission/>
     <HistoryComponentTabs/>
+    {/* <HistoryComponent/> */}
     
     {/* <AboutLeadershipComponent /> */}
     {/*<AboutNetworkComponent />*/}

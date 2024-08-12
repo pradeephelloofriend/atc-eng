@@ -93,13 +93,13 @@ const MenuItemComponent = ({ setTabKey, ref1 }) => {
 					
 				<li className={router.pathname == '/machines' ? "active" : ""} onClick={() => router.push('/machines')} ><a>Machines</a>
 				</li>
-				<li className={router.pathname == '/spares' ? "active" : ""} onClick={() => router.push('/spares')} ><a>Home Appliances</a>
+				<li className={router.pathname == '/homeAppliances' ? "active" : ""} onClick={() => router.push('/homeAppliances')} ><a>Home Appliances</a>
 				</li>
-				<li className={router.pathname == '/spares' ? "active" : ""} onClick={() => router.push('/spares')} ><a>Telecom Sector</a>
+				<li className={router.pathname == '/telecomSector' ? "active" : ""} onClick={() => router.push('/telecomSector')} ><a>Telecom Sector</a>
 				</li>
-				<li className={router.pathname == '/spares' ? "active" : ""} onClick={() => router.push('/spares')} ><a>Plastic Fasteners</a>
+				<li className={router.pathname == '/plasticFastners' ? "active" : ""} onClick={() => router.push('/plasticFastners')} ><a>Plastic Fasteners</a>
 				</li>
-					<li className={router.pathname == '/contat-us' ? "active" : ""} onClick={() => router.push('/contact-us')} ><a>Contact Us</a>
+					<li className={router.pathname == '/contact-us' ? "active" : ""} onClick={() => router.push('/contact-us')} ><a>Contact Us</a>
 					</li>
 
 

@@ -13,7 +13,17 @@ import MachineBlock4 from './MachineBlock4';
 
 function MachinesComponent() { 
   console.log("here",Machines)
-  
+  const createPairs = (array) => {
+    const pairs = [];
+    for (let i = 0; i < array.length; i += 2) {
+      pairs.push(array.slice(i, i + 2));
+    }
+    return pairs;
+  };
+
+  const data = createPairs(Machines.home)
+  console.log(data)
+
   const [selected, setSelected] = useState(null)
 
   const [width, setWidth] = useState(0)
@@ -50,14 +60,17 @@ function MachinesComponent() {
                               <p className='w-title1'>Cutting-Edge Technology</p>
                           </div>
 
-                         <MachineBlock1/>
-                         <MachineBlock2/>
-                         <MachineBlock3/>
-                         <MachineBlock4/>
+                          {
+                            data.map(itm=>
+                                <MachineBlock1 data={itm}/>
+                            )
+                          }
+                         {/* <MachineBlock1/> */}
+                         {/* <MachineBlock2/> */}
+                         {/* <MachineBlock3/>
+                         <MachineBlock4/> */}
       </Container>
-    <div className='container'>
-        {/*<Tabs defaultActiveKey='0' tabPosition={width<900?'top':'left'}>
-          <TabPane tab={'HOME APPLIANCES'} key={0}>*/}
+    {/* <div className='container'>
             
             <div className='row ml-0'>
               {Machines.home.map((v,index)=>
@@ -74,10 +87,9 @@ function MachinesComponent() {
           selected !== null && 
           <div className={`${style.overlay}`} onClick={handleClose}>
               <Popup selected={Machines[selected.type][selected.index]} handleClose={handleClose}/>
-              {/* <SiblingInfo selectDeity={selectDeity} handleClose={handleClose} /> */}
           </div>
         }
-      </div>
+      </div> */}
     </section>
     </>
   )

@@ -1172,7 +1172,7 @@ footer .widget_services ul li a:hover{
    color: #cf2030; 
 }
 .visionTabs .ant-tabs-tab {
-    font-size: 30px; /* Increase this value to make the font size larger */
+    font-size: 25px; 
     padding: 8px 24px;
     text-align: center;
   }
@@ -2278,7 +2278,7 @@ background-color: #cf2030;
 
 .accordion-group li.out {
     width: 60%;
-    height: 255px;
+    /* height: 255px; */
 }
 
 .accordion-group li.out section article {
@@ -3217,6 +3217,7 @@ width: 65px;
     color: #1f445b;
 }
 .read-more {
+    cursor: pointer;
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
@@ -4637,15 +4638,15 @@ background-color: #fff;
     font-weight: normal;
 }
 .diff-class .col-md-6 {
-    width: 100%;
-    padding-top: px;
+    /* width: 100%; */
+    padding-top: 15px;
 }
 .nob_left_box {
     position: relative;
     padding: 45px;
 }
 .nob_box .acco-container {
-    height: 328px;
+    height: auto;
     padding: 0% 0%;
 }
 

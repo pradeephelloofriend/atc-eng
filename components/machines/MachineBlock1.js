@@ -7,21 +7,27 @@ import s2 from '../../public/images/machines/equip1.jpg'
 import s3 from '../../public/images/machines/equip1.jpg'
 import s4 from '../../public/images/machines/equip1.jpg'
 import s5 from '../../public/images/machines/equip1.jpg'
-const MachineBlock1 = () => {
+const MachineBlock1 = ({data}) => {
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
     const[id,setId]=React.useState('')
     //const[active,setActive]=React.useState()
-   const openMenu=(id)=>{
-    setId(id)
-    if(id==1){
-        setOpen(!open)
-        setOpen1(false)
+   const openMenu=(clickId)=>{
+    if (id===clickId) {
+        setId('')
+        console.log(clickId,id)
     }else{
-        setOpen(false)
-        setOpen1(!open1)
+        setId(clickId)
     }
+    // if(id==1){
+    //     setOpen(!open)
+    //     setOpen1(false)
+    // }else{
+    //     setOpen(false)
+    //     setOpen1(!open1)
+    // }
    }
+   console.log(data[0].desc,id)
     React.useEffect(()=>{
         //alert(id)
         
@@ -31,35 +37,76 @@ const MachineBlock1 = () => {
     return (
         <div className='equip-block'>
             <div className='row'>
-                <div className='col-md-6 col-6'>
-                    <div onClick={() =>openMenu(1) } class={id==1 && open?"kam-box kam-img-box img-hvr-content-style-1 e-active":"kam-box kam-img-box img-hvr-content-style-1"}>
-                        <div class="kam-media kam-img-overlay2 kam-img-effect zoom ">
-                            <Image src={s1} alt='' />
-                            <div class="kam-info-has p-a20">
-                                <div class="kam-info-has-text">Extrusion And Corrugation Lines</div>
-                                <DownOutlined />
+                {
+                    data.map((itm,index)=>
+                        <div className='col-md-6 m-t20 '>
+                            <div onClick={() =>openMenu(index) } class={id==1 && open?"kam-box kam-img-box img-hvr-content-style-1 e-active":"kam-box kam-img-box img-hvr-content-style-1"}>
+                                <div class="kam-media kam-img-overlay2 kam-img-effect zoom ">
+                                    <img src={itm.thumImg} alt='' />
+                                    <div class="kam-info-has p-a20">
+                                        <div class="kam-info-has-text">{itm.title}</div>
+                                        <DownOutlined />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className='col-md-6 col-6'>
-                    <div onClick={() => openMenu(2)} class={id==2 && open1?"kam-box kam-img-box img-hvr-content-style-1 e-active":"kam-box kam-img-box img-hvr-content-style-1"}>
-                        <div class="kam-media kam-img-overlay2 kam-img-effect zoom ">
-                            <Image src={s2} alt='' />
-                            <div class="kam-info-has p-a20">
-                                <div class="kam-info-has-text">Thermoforming Machines Upto 2.4m X 2.4m Bench Size</div>
-                                <DownOutlined />
+                    )
+                }
+                {
+                    data.map((itm,index)=>
+                        <Collapse className='eq-block1-col mt-5 ' in={id===index}>
+                            <div id="eq-block1-content1" className='eq-block1-content'>
+                                
+                                <div className='eq-block1-box'>
+                                <div className='head-block mb-4'>
+                                    <h4 className="w-title">{itm.title}</h4>
+
+                                </div>
+                                    <div className='row'>
+                                        {
+                                            itm.desc!==undefined && 
+                                            <div className='col-md-6'>
+                                                <div className='e-box-lr' dangerouslySetInnerHTML={{__html:itm.desc}}>
+                                                {/* <p>POLAR 137 E high-speed cutter with performance-enhancing options tailored to your own requirements.</p>
+                                                <p>POLAR high-speed cutter 137 E marks the entry level to the cutting of medium-size formats, such as III-b print products. Formats up to a diagonal of 1,370 mm can be conveniently turned on the high-speed cutter. When dealing with larger sizes the material being cut can only be turned on the front table.</p> */}
+                                                </div>
+                                                
+                                            </div>
+                                        }
+                                        
+                                        {
+                                            itm.desc!==undefined && 
+                                            <div className='col-md-6'>
+                                                <div class="kam-media-box">
+                                                    <img src={itm.descImg[0]} alt='' />
+                                                </div>
+                                            </div>
+                                        }
+                                        {
+                                            itm.desc==undefined && 
+                                            itm.descImg.map((it,index)=>
+                                                <div className='col-md-4'>
+                                                    <div class="kam-media-box">
+                                                        <img src={it.imgSrc} alt='' />
+                                                        <p className='f-25'>{it.title}</p>
+                                                    </div>
+                                                </div>
+                                            )
+                                            
+                                        }
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <Collapse className='eq-block1-col mt-5 ' in={open}>
+                        </Collapse>
+                    )
+                }
+                {/* <Collapse className='eq-block1-col mt-5 ' in={open}>
                     <div id="eq-block1-content1" className='eq-block1-content'>
                         
                         <div className='eq-block1-box'>
                         <div className='head-block mb-4'>
                             <h4 className="w-title">Polar 137 E</h4>
-                            {/*<p className='w-title1'>Cutting Machine</p>*/}
 
                         </div>
                             <div className='row'>
@@ -180,7 +227,7 @@ const MachineBlock1 = () => {
                         </div>
                     </div>
                     
-                </Collapse>
+                </Collapse> */}
             </div>
         </div>
     )

@@ -7,8 +7,8 @@ const MachinesBreadcumb = () => {
           <div className="kam-bnr-inr-entry p-relative">
             <div className="some-facts "></div>
             <div className="text-uppercase sf-content">
-              <p className='arrow-animation'>InfraStructures</p>
-              {/* <h3>lorem ipsum and new data to be made and make the new data for these</h3> */}
+              <p className='arrow-animation'>Machines</p>
+              {/* <h3>lorem ipsum and new data to be made and make the new data for these</h3> InfraStructures */}
             </div>
           </div>
         </div>
