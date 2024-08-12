@@ -74,7 +74,7 @@ const TopExtraNavComponent = ({ isFixed }) => {
                                     <li><a onClick={() => router.push('/about-us?ref=history')}>COMMSCOPE JOURNEY</a></li>
                                     <li><a onClick={() => router.push('/about-us?ref=certi')}>Certifications</a></li>
                                     <li><a onClick={() => router.push('/quality-check')}>Quality Check</a></li>
-                                    <li><a onClick={() => router.push('/#')}>PROCESSING CAPABILITIES</a></li>
+                                    {/* <li><a onClick={() => router.push('/#')}>PROCESSING CAPABILITIES</a></li> */}
                                     <li><a onClick={() => router.push('/reports')}>Reports</a></li>
                                     <li>
                                         {/* <Popover className='dirPop' content={dirContent} title="Mrs. Poonam Raicar">
