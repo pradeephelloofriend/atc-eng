@@ -61,7 +61,7 @@ const MachinesComponent = () => {
                     </Col>
                     <Col md={4}>
                         <div className={styles.prd_img}>
-                            <img alt='machine' src='/images/machines/wm.jpg'/>
+                            <img alt='machine' src='/images/products/home2-parent.png'/>
                         </div>
                     </Col>
                 </Row>        
@@ -113,7 +113,7 @@ const MachinesComponent = () => {
                     </Col>
                     <Col md={4}>
                         <div className={styles.prd_img}>
-                            <img alt='machine' src='/images/machines/wm.jpg'/>
+                            <img alt='machine' src='/images/products/cable3.png'/>
                         </div>
                     </Col>
                 </Row>        

@@ -2,7 +2,7 @@ import React from 'react'
 const MachinesBreadcumb = () => {
   return (
     <>
-      <div className="kam-bnr-inr bg-pt about-breadcumb">
+      <div className="kam-bnr-inr bg-pt about-breadcumb" style={{backgroundImage:"url('/images/breadcrumb/machinebreadcrumb.jpg')"}}>
         <div className="container">
           <div className="kam-bnr-inr-entry p-relative">
             <div className="some-facts "></div>

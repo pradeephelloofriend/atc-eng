@@ -48,7 +48,7 @@ function SparesComponent({type}) {
   };
 
   const data = createPairs(products[type])
-  console.log(data)
+  // console.log(data)
 
   return (
     <>
