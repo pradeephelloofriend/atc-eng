@@ -60,10 +60,10 @@
         top:2px;
         padding: 8px 15px;
         width: 187px !important ;
-        max-width: 187px !important;
+        /* max-width: 187px !important;
         height: 65px !important;
         min-height: inherit !important;
-        max-height: inherit !important;
+        max-height: inherit !important; */
     }
     .kam-bnr-inr, .kam-bnr-inr .kam-bnr-inr-entry {
         height: 130px;

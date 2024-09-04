@@ -132,18 +132,14 @@ const MainNavBarComponent =()=>{
                             <Button onClick={()=>setOpen(true)} size='middle'  icon={<i class="las la-border-none"></i>} className='btn_drawer'/>
                             <Button onClick={() => router.push('/contact-us')} size='middle' icon={<i class="las la-comment"></i>} className='btn_primary2'>Request a Quote</Button>
                         </Space>
-                        
-                        
                     </div>
                         <div className={btnClick?`header-nav navbar-collapse show collapse`:`header-nav navbar-collapse collapse  `} id="navbarNavDropdown">
                             <div className="logo-header d-md-block d-lg-none">
-                                <a href="#">
+                                <a href="/">
                                 <img src='/images/logo/aplogo.png' alt="logo"/> 
                                     </a>
                             </div>
-                            
-                            <MenuItemComponent/>
-                           
+                            <MenuItemComponent setBtnClick={setBtnClick}/>
                             <div className="kam-social-icon">
                                 <ul>
                                     <li><a className="site-button circle fa fa-facebook" ></a></li>
@@ -152,16 +148,37 @@ const MainNavBarComponent =()=>{
                                     <li><a className="site-button circle fa fa-instagram" ></a></li>
                                 </ul>
                             </div>	
-                            
-                        </div>
-                        
-                    </div>
-                    </div>
+                            <div className='klab-topbar-right header-nav'>
 
-                    
-                    
-                    
-               
+                                <ul className='nav navbar-nav'>
+                                    {/*<li><a >CLIENT LIST <i class="fa fa-chevron-down"></i></a>
+                                        <ul className="sub-menu">
+                                            <li><a>MICR Electronics Ltd( ONIDA )</a></li>
+                                            <li><a>Ion Exchange India Ltd</a></li>
+                                            <li><a>WHIRLPOOL of India Ltd</a></li>
+                                            <li><a>IFB Industries Ltd Washing Machines & AC </a></li>
+                                            <li><a>Commscope India Pvt. Ltd </a></li>
+                                            <li><a>Hyundai Construction Equipment Pvt. Ltd</a></li>
+                                            
+                                        </ul>
+                                    </li>*/}
+                                    <li><a onClick={() => {router.push('/about-us?ref=history');setBtnClick(!btnClick);}}>COMMSCOPE JOURNEY</a></li>
+                                    <li><a onClick={() => {router.push('/about-us?ref=certi');setBtnClick(!btnClick);}}>Certifications</a></li>
+                                    <li><a onClick={() => {router.push('/quality-check');setBtnClick(!btnClick);}}>Quality Check</a></li>
+                                    {/* <li><a onClick={() => router.push('/#')}>PROCESSING CAPABILITIES</a></li> */}
+                                    <li><a onClick={() => {router.push('/reports');setBtnClick(!btnClick);}}>Reports</a></li>
+                                    <li>
+                                        {/* <Popover className='dirPop' content={dirContent} title="Mrs. Poonam Raicar">
+                                        <a >Director Profile</a>
+                                    </Popover> */}
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </div>
             <MenuComponent />
         </div>

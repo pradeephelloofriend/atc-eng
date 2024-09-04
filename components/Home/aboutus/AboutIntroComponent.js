@@ -8,7 +8,7 @@ const AboutIntroComponent = () => {
             <Row>
                 <Col md={7}>
                     <div className={styles.ab_intro_left}>
-                        <h1>CUSTOMER FIRST is the policy we work at ATC INDUSTRIES</h1>
+                        <h1 style={{fontSize:"30px"}}>CUSTOMER FIRST is the policy we work at ATC INDUSTRIES</h1>
                         <div className=''>
                             <p>ATC Industries is involved in the Manufacture of  Engineering Polymer Components made as per the specifications of various O.E.M s of Home Appliances, Telecom equipment manufacturers, and the Automobile sector.
                             </p>

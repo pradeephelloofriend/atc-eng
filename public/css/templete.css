@@ -3422,6 +3422,10 @@ HOME 5 Box Header
 	}
 }
 @media only screen and (max-width: 991px){
+	
+	.header-nav .klab-topbar-right{
+		display:contents !important;
+	}
 	.header-curve.ext-header .extra-nav:after,
 	.header-curve.ext-header .extra-nav:before {
 		content:none;
@@ -7271,3 +7275,6 @@ margin-top: 0;
 	}
 }
 
+.header-nav .klab-topbar-right{
+	display: none;
+}
