@@ -119,3 +119,13 @@
     font-weight: 500;
     color: #0b7a7e;
 }
+@media (max-width: 768px) {
+    .ab_intro_left{
+        padding: 0 20px;
+    }
+    .right_intro{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+    }
+}

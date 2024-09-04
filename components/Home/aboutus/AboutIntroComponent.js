@@ -18,7 +18,7 @@ const AboutIntroComponent = () => {
                         </div>
                     </div>
                 </Col>
-                <Col md={5}>
+                <Col md={5} className={styles.right_intro}>
                     <div className={styles.ab_intro_right}>
                         <h4>ATC Industries, a part of THE SHAH GROUP OF COMPANIES, founded by late Mr. A. T. Shah, is a partnership concern established since 1996.
                         </h4>
