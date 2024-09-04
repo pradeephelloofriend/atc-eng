@@ -42,7 +42,7 @@
         /* top: 38px; */
     }
     .logo-header img, .logo-footer img {
-        max-width: 160px;
+        max-width: 200px;
     }
     .extra-nav .site-button-link{
         top:43px;
@@ -210,7 +210,7 @@
     }
     .get-class .ant-btn-primary {
         background-color: #1f445b;
-        width: 339px;
+        /* width: 339px; */
     }
     .newd {
         padding-top: 20px;

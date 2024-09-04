@@ -43,7 +43,7 @@
 }
 .pr_box{
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 15px;
 }
 .pr_heading{
     position: relative;
@@ -67,7 +67,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    align-items: center;
     justify-content: center;
     border-left: 1px solid #ffffff4f;
     padding: 14px;
@@ -75,9 +75,24 @@
     text-align: center;
     height: 150px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .item_top h4{
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .pr_box {
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+
+    .pr_item_box {
+        margin-bottom: 15px;
+    }
+
+    .item_top h4 {
+        font-size: 14px; 
+    }
 }

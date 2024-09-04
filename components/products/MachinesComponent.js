@@ -17,7 +17,7 @@ const MachinesComponent = () => {
                             <img alt='machine' src='/images/machines/mchBg.jpg'/>
                         </div>
                     </Col>
-                    <Col md={8}>
+                    <Col md={8} className='mt-10'>
                         <div className={styles.prd_cont}>
                             <h4>Machines</h4>
                             <p>With superior infrastructure ensuring top-notch quality and efficiency in every product we deliver.</p>
@@ -59,7 +59,7 @@ const MachinesComponent = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className='mt-10'>
                         <div className={styles.prd_img}>
                             <img alt='machine' src='/images/products/home2-parent.png'/>
                         </div>
@@ -73,7 +73,7 @@ const MachinesComponent = () => {
                             <img alt='machine' src='/images/machines/tm.jpg'/>
                         </div>
                     </Col>
-                    <Col md={8}>
+                    <Col md={8}  className='mt-10'>
                         <div className={styles.prd_cont}>
                             <h4>TELECOM SECTOR</h4>
                             <p>Empowering connectivity with innovative telecom solutions, including advanced radomes and EPS pallets for seamless communication infrastructure.</p>
@@ -111,7 +111,7 @@ const MachinesComponent = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4}  className='mt-10'>
                         <div className={styles.prd_img}>
                             <img alt='machine' src='/images/products/cable3.png'/>
                         </div>

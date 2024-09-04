@@ -11743,7 +11743,7 @@ footer .widget_services ul li {
 /*widget Getintuch*/
 .footer-top {
    /* background: #1f445b; */
-   background: #1e7b82;
+   background: #1b2324;
    /* background: #3eb4bc; */
    background-size: unset;
    background-position: center;
@@ -14691,6 +14691,9 @@ height:60px;
    }
 }
 @media only screen and (max-width: 767px){
+   .company-details{
+      display: none;
+   }
    .ft-contact{
        flex-wrap: wrap;	
    }

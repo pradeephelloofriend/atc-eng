@@ -30,8 +30,9 @@ const MainSliderComponent = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <img src='/images/aeBanner-min.jpg' alt="s1"  />
+              <SwiperSlide >
+                {/* <img src='/images/aeBanner-min.jpg' alt="s1"  /> */}
+                <div style={{width:"100%", height:"350px", backgroundImage:"url('/images/aeBanner-min.jpg')"}}>
                 <div className="swiper_content ">
                   <div class="some-facts "></div> 
                    <h4>Welcome to ATC Industries</h4>
@@ -39,9 +40,11 @@ const MainSliderComponent = () => {
                   <p>one-stop shop for injection molding, extrusion, blow molding, thermoforming of plastic components, and HF-welded fabric parts.</p>
                   <a href="/spares" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
                 </div> 
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src='/images/aeBanner-min.jpg' alt="s1"  />
+              <div style={{width:"100%", height:"350px", backgroundImage:"url('/images/aeBanner-min.jpg')"}}>
+                {/* <img src='/images/aeBanner-min.jpg' alt="s1"  /> */}
                 <div className="swiper_content ">
                   <div class="some-facts "></div> 
                   <h4>Welcome to ATC Industries</h4>
@@ -49,6 +52,8 @@ const MainSliderComponent = () => {
                   <p>Agnel group a goan native a diversified business.</p>
                   <a href="/about-us" className="site-button radius-xl btnhover13  mt-10">Learn More</a>
                 </div> 
+
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>

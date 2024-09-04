@@ -217,13 +217,13 @@
 }
 
 .swiper_content {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
     align-items:flex-start;
     padding: 4% 12%;
-    width: 75%;
+    /* width: 75%; */
 
 }
 
@@ -324,6 +324,7 @@
     font-family: 'Helvetica 55 Roman', sans-serif;
     font-size: 40px;
     color: #265994;
+    line-height: normal;
 }
 
 .slider-right .swiper-slide-active .swiper_content .btn-view {
@@ -3993,11 +3994,11 @@ text-decoration: underline;
     
     .get-class .ant-btn-primary {
         background-color: #517c97;
-        width: 430px;
+        width: 100%;
     }
     @media screen and (min-width: 400px) and (max-width: 900px) {
         .get-class .ant-btn-primary {
-            width: 227px;
+            /* width: 227px; */
         }
     }
     .get-class .anticon {

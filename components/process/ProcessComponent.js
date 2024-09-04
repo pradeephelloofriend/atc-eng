@@ -12,9 +12,9 @@ const ProcessComponent = () => {
             </div>
             <div className={styles.pr_box}>
                 <Row>
-                    <Col md={7}>
+                    <Col md={7} sm={12}>
                         <Row>
-                            <Col md={4}>
+                            <Col md={4} sm={6} >
                                 <div className={styles.pr_item_box}>
                                     <div className={styles.item_top}>
                                         <h4>Injection Molding </h4>
@@ -24,7 +24,7 @@ const ProcessComponent = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={4}>
+                            <Col md={4} sm={6}>
                                 <div className={styles.pr_item_box}>
                                     <div className={styles.item_top}>
                                         <h4>Extrusion Of Profiles And Sheets</h4>
@@ -34,7 +34,7 @@ const ProcessComponent = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={4}>
+                            <Col md={4} sm={6}>
                                 <div className={styles.pr_item_box}>
                                     <div className={styles.item_top}>
                                         <h4>Blow Molding   </h4>
@@ -48,7 +48,7 @@ const ProcessComponent = () => {
                     </Col>
                     <Col md={5}>
                         <Row>
-                            <Col md={6}>
+                            <Col md={6} sm={6}>
                                 <div className={styles.pr_item_box}>
                                     <div className={styles.item_top}>
                                         <h4>Thermoforming/vaccum Form </h4>
@@ -58,7 +58,7 @@ const ProcessComponent = () => {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={6}>
+                            <Col md={6} sm={6}>
                                 <div className={styles.pr_item_box}>
                                     <div className={styles.item_top}>
                                         <h4>Cutting And High Frequency Plastic Welding 

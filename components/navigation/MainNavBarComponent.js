@@ -58,7 +58,7 @@ const MainNavBarComponent =()=>{
                             <a ><img src='/images/logo/aplogo.png' alt="logo" /></a>
                                 
                         </div>
-                        <div className='klab-topbar-left'>
+                        <div className='klab-topbar-left company-details'>
                                 <ul>
                                     <li>
                                         <a href="#" style={{ marginLeft: '6px' }}>
