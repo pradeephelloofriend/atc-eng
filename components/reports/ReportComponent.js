@@ -10,19 +10,7 @@ import styles from './reports.module.css'
 
 const ReportComponent = () => {
     const [tabKey, setTabKey] = useState(0)
-    const [width, setWidth] = useState(0)
-  useEffect(() => {
-    function handleResize() {
-      setWidth(parseInt(window.innerWidth))
-    }
-    window.addEventListener("resize", handleResize)
     
-    handleResize()
-    
-    return () => { 
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [setWidth])
 
   const generateColumns = (data) => {
     const sample = data.table[0]; // Assuming all rows have the same structure

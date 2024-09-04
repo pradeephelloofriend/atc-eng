@@ -1173,19 +1173,22 @@ footer .widget_services ul li a:hover{
    color: #cf2030; 
 }
 .visionTabs .ant-tabs-tab {
-    font-size: 25px; 
-    padding: 8px 24px;
+    font-size: 20px; 
+    padding: 8px ;
     text-align: center;
   }
   
 
-:where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs .ant-tabs-content {
+.history :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs .ant-tabs-content {
     padding-left: 50px;
     position: relative;
     width: 100%;
 }
 @media only screen and (max-width: 700px) and (min-width: 350px) {
-    :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >div>.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >div>.ant-tabs-nav .ant-tabs-tab {
+    .history :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs .ant-tabs-content {
+        padding-left: 0;
+    }
+    .history :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-left >div>.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-1uq9j6g).ant-tabs-right >div>.ant-tabs-nav .ant-tabs-tab {
         padding: 8px 24px;
         text-align: center;
         font-size: 10px;

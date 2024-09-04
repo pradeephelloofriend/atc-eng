@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './abt.module.css'
 import { Card,Tabs } from 'antd'
 import { useRouter } from 'next/router';
@@ -8,6 +8,19 @@ const { TabPane } = Tabs;
 const HistoryComponentTabs = () => {
     const router = useRouter()
     const ref = useRef()
+    const [width, setWidth] = useState(0)
+  useEffect(() => {
+    function handleResize() {
+      setWidth(parseInt(window.innerWidth))
+    }
+    window.addEventListener("resize", handleResize)
+    
+    handleResize()
+    
+    return () => { 
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [setWidth])
     useEffect(()=>{
         if (router.query.ref == 'history') {
             ref.current.scrollIntoView({behavior:"smooth", block: "nearest", inline:"start"});
@@ -15,14 +28,14 @@ const HistoryComponentTabs = () => {
     },[router.query])
   return (
     <div className={`${styles.dif_class} diff-class`} ref={ref}>
-    <div className='container'>
+    <div className='container history'>
         <div className='head-block-center text-center'>
               <h4 className="w-title">OUR JOURNEY WITH COMMSCOPE
               </h4>
               <p className='w-title1'>A skilled leader who excels in guiding teams</p>
             </div>
             <div >
-            <Tabs tabPosition='left'  className='visionTabs'>
+            <Tabs tabPosition={width<900?'top':'left'}  className='visionTabs'>
                 
             <TabPane   tab={<span>2006-07</span>} key="1" >
                 <div >
